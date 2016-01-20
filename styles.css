@@ -74,7 +74,7 @@ h4 {
 	font-family: AvenirNext-Regular;
 	padding: 5px 15px;
 	border: 1px grey solid;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	background-color: white;
 }
 
@@ -91,13 +91,51 @@ h4 > div:last-child {
 	width: 100%;
 	background-color: #f3e624;
 	padding: 3% 5%;
+	box-sizing: border-box;
 }
 
 #intro1 {
 	font-size: 36px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+	/*width: 100%;*/
 }
 
 #intro2 {
 	font-size: 32px;
+	color: #4a4a4a;
+}
+
+#bottom {
+	text-align: center;
+}
+
+#bottom > h2 {
+	font-family: AvenirNext-DemiBold;
+	font-size: 48px;
+	font-color: #86d5ff;
+}
+
+#buttons > button {
+	width: 250px;
+	background-color: #86d5ff;
+	border: 2px solid #86d5ff;
+	border-radius: 6px;
+	color: white;
+	margin: 2%;
+	font-size: 20pt;
+	font-family: AvenirNext-DemiBold;
+}
+
+#more {
+	/*display: inline;*/
+	width: 55%;
+	font-size: 36px;
+	color: #4a4a4a;
+	text-align: center;
+}
+
+#more > a {
+	font-family: AvenirNext-DemiBold;
+	text-decoration: none;
+	color: #4a4a4a;
 }
