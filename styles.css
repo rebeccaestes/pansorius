@@ -2,6 +2,14 @@
 	font-weight: lighter;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 		font-family: AvenirNext-Regular;
 		margin: 0;
@@ -9,22 +17,28 @@ body {
 
 .left {
 	float: left;
-	width: 45%;
-	padding-right: 5%;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .right {
 	float: right;
-	width: 48%;
-	background-color: #f3e624;
+	width: 50%;
+	background-color: #fff362;
 	padding-left: 2%;
-	height: 700px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 h1 {
 	top: 14px;
 	font-family: AbadiMT-CondensedLight;
-	font-size: 105px;	
+	font-size: 105px;
 	display: block;
 	text-transform: uppercase;
 }
@@ -32,16 +46,32 @@ h1 {
 #bringing {
 	color: #f3e624;
 	text-align: right;
+	position: absolute;
+	top: 14px;
+	right: 35px;
+	margin: 0;
 }
 
-#bringing > div:last-child {
+.details3 {
+	padding: 30px 0 0 0;
+}
+
+.details3 > div:last-child {
 	color: #75cfff;
 }
 
 #pansori {
 	color: #75cfff;
 	text-align: left;
-	margin-bottom: 0;
+	position: absolute;
+	top: 14px;
+	left: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	color: #86d5ff
 }
 
 h3 {
@@ -76,11 +106,9 @@ h4 {
 	border: 1px grey solid;
 	/*border-radius: 3px;*/
 	background-color: white;
-}
-
-h4 > div:last-child {
-	margin-left: 4%;
-	margin-top: 4%;
+	position: absolute;
+	top: 404px;
+	left: 29px;
 }
 
 #image {
@@ -113,6 +141,7 @@ h4 > div:last-child {
 	font-family: AvenirNext-DemiBold;
 	font-size: 48px;
 	font-color: #86d5ff;
+	margin-bottom: 0;
 }
 
 #buttons > button {
@@ -132,10 +161,60 @@ h4 > div:last-child {
 	font-size: 36px;
 	color: #4a4a4a;
 	text-align: center;
+	margin: 0 auto;
 }
 
 #more > a {
 	font-family: AvenirNext-DemiBold;
 	text-decoration: none;
 	color: #4a4a4a;
+}
+
+.bottom-image {
+	position: absolute;
+	background-image: url(images/neue-skyline.png);
+	width: 100vw;
+	height: 395px;
+	top: 631px;
+}
+
+.top-image {
+	background-image: url(images/liberty_skyline-01.png);
+	width: 100vw;
+	height: 610px;
+	position: absolute;
+	top: 292px;
+	mix-blend-mode: multiply;
+}
+
+#top {
+	position: relative;
+	height: calc(631px + 395px);
+	width: 100%;
+}
+
+.details {
+	position: absolute;
+	top: 113px;
+	left: 24px;
+	padding: 20px 0 0 0; /*need padding amount*/
+}
+
+.details2 {
+	position: absolute;
+	left: 39px;
+	top: 466px;
+	width: 234px;
+	margin: 0;
+}
+
+
+/* width, position values, etc will need to change once font is finalized*/
+.line {
+	position: absolute;
+	left: 0;
+	top: 26px;
+	background: linear-gradient(180deg, #f8e71c, #75cfff);
+	width: 21px;
+	height: 697px;
 }
