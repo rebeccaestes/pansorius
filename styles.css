@@ -1,0 +1,103 @@
+* {
+	font-weight: lighter;
+}
+
+body {
+		font-family: AvenirNext-Regular;
+		margin: 0;
+}
+
+.left {
+	float: left;
+	width: 45%;
+	padding-right: 5%;
+}
+
+.right {
+	float: right;
+	width: 48%;
+	background-color: #f3e624;
+	padding-left: 2%;
+	height: 700px;
+}
+
+h1 {
+	top: 14px;
+	font-family: AbadiMT-CondensedLight;
+	font-size: 105px;	
+	display: block;
+	text-transform: uppercase;
+}
+
+#bringing {
+	color: #f3e624;
+	text-align: right;
+}
+
+#bringing > div:last-child {
+	color: #75cfff;
+}
+
+#pansori {
+	color: #75cfff;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 36px;
+	color: #9b9b9b;
+	font-family: AvenirNext-MediumItalic;
+	margin-top: 5px;
+	margin-bottom: 100px;
+}
+
+h3 > div {
+	line-height: 40px;
+}
+
+.first {
+	font-family: AvenirNext-Regular;
+	margin-top: 0;
+}
+
+h4 {
+	font-size: 28px;
+	color: #4a4a4a;
+	width: 300px;
+}
+
+#secure {
+	text-shadow: 0px 1px 0px 0px rgba(255, 254, 255, 0.5);
+	font-size: 28px;
+	color: #4a4a4a;
+	font-family: AvenirNext-Regular;
+	padding: 5px 15px;
+	border: 1px grey solid;
+	border-radius: 3px;
+	background-color: white;
+}
+
+h4 > div:last-child {
+	margin-left: 4%;
+	margin-top: 4%;
+}
+
+#image {
+	clear: both;
+}
+
+#main {
+	width: 100%;
+	background-color: #f3e624;
+	padding: 3% 5%;
+}
+
+#intro1 {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+
+#intro2 {
+	font-size: 32px;
+}
