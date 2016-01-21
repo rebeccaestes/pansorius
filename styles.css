@@ -212,9 +212,9 @@ h4 {
 /* width, position values, etc will need to change once font is finalized*/
 .line {
 	position: absolute;
-	left: 0;
-	top: 26px;
+	left: 6px;
+	top: 20px;
 	background: linear-gradient(180deg, #f8e71c, #75cfff);
-	width: 21px;
+	width: 7px;
 	height: 697px;
 }
