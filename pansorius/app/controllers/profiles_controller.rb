@@ -1,9 +1,9 @@
 class ProfilesController < ApplicationController
-  # def sort
-  #   session[:sort_by] = params[:sort_by]
-  #   redirect_to profiles_path
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   # end
   def index
+    authenticate_user!
     @profiles = Profile.all
   end
 end
