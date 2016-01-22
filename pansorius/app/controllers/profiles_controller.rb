@@ -1,9 +1,11 @@
 class ProfilesController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
   # end
   def index
-    authenticate_user!
-    @profiles = Profile.all
+    if current_user
+      @profiles = current_user.profiles
+    else
+      @profiles = Profile.all
+    end
   end
 end
