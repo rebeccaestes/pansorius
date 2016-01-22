@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'profiles' => 'profiles#index'
-  post 'profiles' => 'profiles#create'
-
+  root :to => 'pages#home'
+  # get 'profiles' => 'profiles#index'
+  # post 'profiles' => 'profiles#create'
+  # put 'profiles' => 'profiles#update'
+  # delete 'profiles' => 'profiles#delete'
   # get 'skills' => 'skills#index'
   # post 'skills' => 'skills#create'
 
