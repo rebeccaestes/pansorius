@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'profiles' => 'profiles#index'
+  post 'profiles' => 'profiles#create'
+
+  # get 'skills' => 'skills#index'
+  # post 'skills' => 'skills#create'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
