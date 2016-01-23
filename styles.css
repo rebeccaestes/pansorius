@@ -227,3 +227,7 @@ h4 {
 	width: 7px;
 	height: 697px;
 }
+
+a {
+	text-decoration: none;
+}
