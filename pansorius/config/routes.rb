@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'profiles' => 'profiles#index'
   post 'profiles' => 'profiles#create'
 
+  root to: 'profile#index'
+
   # get 'skills' => 'skills#index'
   # post 'skills' => 'skills#create'
 
