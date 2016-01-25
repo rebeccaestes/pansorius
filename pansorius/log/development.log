@@ -546,3 +546,63 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:03:37 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:05:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( normalize.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3: <head>
+    4:   <title>Pansori.us</title>
+    5:   <%= stylesheet_link_tag    'normalize', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= stylesheet_link_tag    'splash', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1677880312651124808_70278817663860'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (164.3ms)
+
+
+Started GET "/" for ::1 at 2016-01-25 12:06:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 333ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/application.self-bb0517cd2c6dc678abdc8869ab6bbe453841d466350a235ea523bb9a29789855.css?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:06:01 -0500
