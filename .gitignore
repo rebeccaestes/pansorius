@@ -11,3 +11,5 @@
 /log/*
 !/log/.keep
 /tmp
+
+/pansorius/config/secrets.yml
