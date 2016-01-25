@@ -194,6 +194,7 @@ h4 {
 	position: absolute;
 	top: 292px;
 	mix-blend-mode: multiply;
+	pointer-events: none;
 }
 
 #top {
