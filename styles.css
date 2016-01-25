@@ -231,3 +231,67 @@ h4 {
 a {
 	text-decoration: none;
 }
+
+button > a {
+	color: white;
+}
+
+@media screen and (max-width: 1350px){
+	h1 {
+		font-size: 76px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	h4 > .details2,
+	#secure {
+		font-size: 24px;
+	}
+	.line {
+		left: 5px;
+		width: 5px;
+	}
+	#intro1 {
+		font-size: 32px;
+	}
+	#intro2 {
+		font-size: 28px;
+	}
+	#bottom > h2,
+	#more {
+		font-size: 38px;
+	}
+	button > a {
+		font-size: 34px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	h1 {
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 > .details2,
+	#secure {
+		font-size: 18px;
+	}
+	.line {
+		left: 4px;
+		width: 3px;
+	}
+	#intro1 {
+		font-size: 24px;
+	}
+	#intro2 {
+		font-size: 20px;
+	}
+	#bottom > h2,
+	#more {
+		font-size: 30px;
+	}
+	button > a {
+		font-size: 24px;
+	}
+}
