@@ -606,3 +606,1814 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:06:01 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:09:50 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 384ms (Views: 369.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:09:50 -0500
+
+
+Started GET "/assets/application.self-8e99897bc2576199902243fd66cdf5940f53a76aee1104cae7b3aeea4d888273.css?body=1" for ::1 at 2016-01-25 12:09:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:09:50 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:09:50 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:09:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:09:51 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:09:51 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:09:58 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b56f55c7634894663867c1fd6609425dbaf39f92f25e4f31fa16ac298417e93e.css?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:09:59 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:10:02 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/application.self-b56f55c7634894663867c1fd6609425dbaf39f92f25e4f31fa16ac298417e93e.css?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:10:02 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:10:09 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-01-25 12:10:37 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-54677877840823e13c73a3e385212ce596fb78ffe268d435d38e07d9f43cdcaa.css?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:10:37 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:10:42 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/application.self-1d67e9b8e7025b3e35b665549896014256a927fd94b61eed5841f6822c8e50bf.css?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:10:42 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:10:43 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/application.self-1d67e9b8e7025b3e35b665549896014256a927fd94b61eed5841f6822c8e50bf.css?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:10:43 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:11:19 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a25c1bb592cebe890f6b930a4284e7c5cd7d11e1f792ed152a33604711086908.css?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:11:19 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:11:20 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/application.self-a25c1bb592cebe890f6b930a4284e7c5cd7d11e1f792ed152a33604711086908.css?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:11:20 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:21 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/application.self-e71d23037f9bb7a68894cdab02161c1647b8e0b88a2ce6d9d563027f2715bf58.css?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:21 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:22 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/application.self-e71d23037f9bb7a68894cdab02161c1647b8e0b88a2ce6d9d563027f2715bf58.css?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:22 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:33 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3fd4f80c286ea7bd02468acb48aaa7a912b22cff3de092d31423f699d413385f.css?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:33 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:39 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/application.self-f4d5489116023b32eafaf321a44ff742f3ca77e70ddbfb1e9a13984694eed2b8.css?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:39 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:40 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/application.self-f4d5489116023b32eafaf321a44ff742f3ca77e70ddbfb1e9a13984694eed2b8.css?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:40 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:45 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/application.self-446fb0232611a6c69a07e977a5866e20f1f05a3003c6d75be28d53f03685e911.css?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:45 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:12:59 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-73216c17394e86ef7586be827f24352bd74435c31c6a6083be0d32809b768d85.css?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:12:59 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:13:00 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/application.self-73216c17394e86ef7586be827f24352bd74435c31c6a6083be0d32809b768d85.css?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:13:00 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:13:26 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a7e32c31dc65ac4f7ff9f60e726a792ddf5acb25d49e88c22e45f916d728260b.css?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:13:26 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:13:42 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2b0c1c68a4ccb6b6b1af1c64b14104b7d2c6df4b0f06c297904e9f4770dc614.css?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:13:42 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:13:43 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/application.self-e2b0c1c68a4ccb6b6b1af1c64b14104b7d2c6df4b0f06c297904e9f4770dc614.css?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:13:43 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:14:04 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7afd424f44ced0ed724e4045b6bb9e3cda930dd4d715a5632b3e892556f1ff20.css?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:14:04 -0500
+
+
+Started GET "/assets/assets;images/liberty_skyline-01.png" for ::1 at 2016-01-25 12:14:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets;images/liberty_skyline-01.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.7ms)
+
+
+Started GET "/" for ::1 at 2016-01-25 12:15:02 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-635de9f827b0618db99d9c05fe0568ac8ce654566ccadbadb43e66d2bd4ddbf9.css?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:15:02 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:15:03 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:15:09 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cf091379988b8abc08d2a695dea59785c191133a894ab69ac10c8e1e3ad31c84.css?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:15:09 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:15:15 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a12f8dc6ce88d4b2ecce88bb2bef4f7c6074eb5d5483494ce0fe7c82795810b8.css?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:15:15 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:15:23 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4bd1fd9b1c946e62a14b9731f8a454ed2ed5d6428d8d88d8253959944c5cf8d4.css?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:15:23 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:11 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9c98740067c5d7575b00c6082e9193b469d2eef27b738c643d3c8d9dbff88aca.css?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:16:11 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:12 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/application.self-9c98740067c5d7575b00c6082e9193b469d2eef27b738c643d3c8d9dbff88aca.css?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:12 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:20 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3bef530dda80f0e40a34887c143a76e02fc067d7e986ce3e986a5652ddb37920.css?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:16:20 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:21 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/application.self-3bef530dda80f0e40a34887c143a76e02fc067d7e986ce3e986a5652ddb37920.css?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:21 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:27 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/application.self-3a805949f636fd841640f710f6535111dcd6a5f78486c649051190a003b8f3bb.css?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:16:27 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:16:54 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a6a46998419e7c22a2a99581fb26c562861e5e1768f418b9bbac5f60f568e652.css?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:16:54 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:17:01 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/application.self-22c64b484a5451dd69c814988cf7fef91d8706903ce89e20e452cebf88956d5a.css?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:17:01 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:17:09 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/application.self-0f911be1972037f5e7f0f1e42a80182b1fbd0e2aefca0b1615546eee1d207b56.css?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:17:09 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:17:38 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/application.self-77d6eae16aafe43e73f11ecc2d7b489ce4846ae9035f366acf2e225373cde2d5.css?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:17:38 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:17:45 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a6ffbbba1ee2bf484c7f8b7f6b2a5ee06a9a44cda882d978a018d15525db0a9e.css?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:17:45 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:18:02 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/application.self-591e94fe5698743a57e80241cc8f1380e9e6a6af7312207dbf0b2890a5c50281.css?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:18:02 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:18:07 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-63b53590a445e81399ac49839f70b99f3ca0d7967c9dd428a674716c92b09428.css?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:18:07 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:18:14 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/application.self-afb7e4aa856460b14e3d07d418a00fa0ca1e932b43b7d37e819305f8578a0784.css?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:18:14 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:18:37 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/application.self-fcb61f90d64f002d42492816cea71e16611a84c26a20055a6ed04ddac87c584c.css?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:18:37 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:18:52 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-16a0458e7458f500917e15f3e5ee873b38ca0c6e921ce9f98f5c2cdf25b27fb7.css?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:18:52 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:00 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/application.self-5b16db20c67736dd4f1d870e4d36f484c244c10824330ffebc396c2a6070e35f.css?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:19:00 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:05 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-63b53590a445e81399ac49839f70b99f3ca0d7967c9dd428a674716c92b09428.css?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:05 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:15 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/application.self-c107ae45aada44f7f1850d48f735102b7ec59670eb3a0055e67dbf9fddf2b284.css?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:19:15 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:23 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0072b7f83a38d0731b21708dfc74556fa64b1dbf299f514fc3ea74518923e712.css?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:19:23 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:32 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/application.self-63b53590a445e81399ac49839f70b99f3ca0d7967c9dd428a674716c92b09428.css?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:32 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:19:39 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/application.self-dfbe4d40ad6b03215a6c91712bcad5d8393f0560fe67debd76978c0db11f82da.css?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:19:39 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:20:00 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/application.self-63b53590a445e81399ac49839f70b99f3ca0d7967c9dd428a674716c92b09428.css?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:20:01 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:20:16 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b4f90fc05acd3b43148374abac8d48776ecbabcf4a2491752c355854a1fc07cc.css?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:20:17 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:20:23 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/application.self-92b0304a8169a09793aed72ae8a98fb1ee8d81286cc1e8c08397a8c1d0d2a761.css?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:20:23 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:20:36 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/application.self-2533cf0c7257d057680bd379c8bcf353650725d76278c0e7b560d59d1a539857.css?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:20:36 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:20:45 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b93f4647d8fd510052e1525c58ef2a1e9a0e07c483c87fd02e904b3f0faeb5b5.css?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:20:45 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:21:33 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-76a387baae73969740d23c6fb0605d1e3360dd997963217753440d8a435efb0b.css?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:21:34 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:21:35 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/application.self-76a387baae73969740d23c6fb0605d1e3360dd997963217753440d8a435efb0b.css?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:21:35 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:21:40 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/application.self-df31f2b356c75211b5545b55fb8cc63f71915fc03d77a3a436a7c484e4b9904d.css?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:21:40 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:21:49 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f160040779611b39e6645fb805afdda8935d20724eb66260c8d640244373ec2f.css?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:21:49 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:21:57 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0655a0320bd1deabebdb61a47d2aec5dff93589a0d347776336c40d90980f2bb.css?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:21:57 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:23:02 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/application.self-bb7fb162267626c9ae618c2f2245e35188a53dcc6d6ae491151775af3eb68f3b.css?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:23:02 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:23:16 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-78e91ca672420b050f6ab83c983d9bd941883614471f3649d43db06ed8c50e07.css?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:23:17 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:23:36 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/application.self-95e500dcc3f49ad485938f6ce8c4fb16dd8f1d340ba9d30590ee1d8dbfaad071.css?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:23:36 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:23:58 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-33ed019189548e0d63b7ceeffb953113f98dc7fefeb190843fbd12e818d38914.css?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:23:58 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:24:23 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/application.self-33ed019189548e0d63b7ceeffb953113f98dc7fefeb190843fbd12e818d38914.css?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:24:23 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:24:24 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/application.self-33ed019189548e0d63b7ceeffb953113f98dc7fefeb190843fbd12e818d38914.css?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:24:24 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 12:24:31 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/application.self-6d65349b65c5097194ff6476c89ce18a565f806a9a0c5653df6ae3e06fb42f14.css?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 12:24:31 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 12:24:31 -0500
