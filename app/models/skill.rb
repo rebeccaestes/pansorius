@@ -1,3 +1,4 @@
 class Skill < ActiveRecord::Base
-  belongs_to :profile
+  has_many :skilltaggings
+  has_many :profiles, through: :skilltaggings
 end
