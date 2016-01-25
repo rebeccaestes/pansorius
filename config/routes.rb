@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  root :to => 'pages#home'
+
+  root to: 'profiles#index'
   devise_for :users
+
+  resources :profiles
+
   # get 'profiles' => 'profiles#index'
   # post 'profiles' => 'profiles#create'
   # put 'profiles' => 'profiles#update'
