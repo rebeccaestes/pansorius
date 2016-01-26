@@ -17,12 +17,16 @@ class ProfilesController < ApplicationController
   end
 
   def new
-    # @profile = current_user.profile.new
-    @profile = Profile.new
+    if current_user.profile
+      redirect_to current_user.profile, notice: 'A profile for this user already exists.'
+    else
+      @profile = Profile.new
+    end
   end
 
   def create
     @profile = Profile.new(profile_params)
+    @profile.user = current_user
 
     respond_to do |format|
       if @profile.save
