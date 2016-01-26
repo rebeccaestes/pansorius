@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_profile, except: [:index]
+  before_action :set_profile, only: [:show, :edit, :update, :destroy]
   # end
   def index
   	puts "*" * 50
@@ -14,6 +14,11 @@ class ProfilesController < ApplicationController
 
   def show
     @experiences = @profile.experiences
+  end
+
+  def new
+    # @profile = current_user.profile.new
+    @profile = Profile.new
   end
 
   private
