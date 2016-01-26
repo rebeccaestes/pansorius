@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :experiences
-  resources :valuetags
   root to: 'profiles#index'
   devise_for :users
-  resources :profiles
+  resources :profiles do
+    resources :experiences, :valuetags
+  end
 end

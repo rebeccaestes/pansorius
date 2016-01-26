@@ -1,17 +1,25 @@
 class ValuesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_experience, only: [:show, :edit, :update, :destroy]
 
 
   def index
-    @values = Value.all
+    if current_user
+      @values = current_user.valuetags
+    else
+      @values = Value.all
+    end
+  end
+  def new
+    @artist = User.find(params[:user_id])
+    @value = Value.new
   end
 
   def show
+
+
   end
 
-  def new
-    # @experience = Experience.new
-  end
 
   def edit
   end

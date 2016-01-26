@@ -14,7 +14,7 @@ class ProfilesController < ApplicationController
 
   def show
     @experiences = @profile.experiences
-    @valuetags = @profile.valuetaggings
+    @valuetags = @profile.values
   end
 
   def new
