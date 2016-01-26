@@ -11,16 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125232443) do
+ActiveRecord::Schema.define(version: 20160126031154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "experiences", force: :cascade do |t|
+    t.string   "role"
+    t.string   "company"
+    t.string   "start"
+    t.string   "end"
+    t.text     "description"
+    t.integer  "profile_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "experiences", ["profile_id"], name: "index_experiences_on_profile_id", using: :btree
+
   create_table "profiles", force: :cascade do |t|
-    t.string   "quote"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+    t.string   "type"
+    t.text     "quote"
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
@@ -73,5 +87,6 @@ ActiveRecord::Schema.define(version: 20160125232443) do
   add_index "valuetaggings", ["profile_id"], name: "index_valuetaggings_on_profile_id", using: :btree
   add_index "valuetaggings", ["value_id"], name: "index_valuetaggings_on_value_id", using: :btree
 
+  add_foreign_key "experiences", "profiles"
   add_foreign_key "profiles", "users"
 end
