@@ -7,5 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 users = User.all
-Profile.create(role: 'mentor', user: users.first, quote: 'this is my quote. there are many like it but this one is mine')
+Profile.create(role: 'mentor', insights: 'I know stuff, this is an insight', user: users.first, quote: 'this is my quote. there are many like it but this one is mine')
 Experience.create(role: 'Software Developer', company: 'Optoro', description: 'did stuff with ruby', start_date: 'January 2016', end_date: 'Present', profile: Profile.all.first)
+
+user = User.find(2)
+Profile.create(role: 'protege', insights: 'I know stuff, this is an insight', user: user, quote: 'this is my quote. there are many like it but this one is mine')
+prof = Profile.find_by(role: 'protege')
+Experience.create(role: 'Software Developer', company: 'Optoro', description: 'did stuff with ruby', start_date: 'January 2016', end_date: 'Present', profile: prof)

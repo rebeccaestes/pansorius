@@ -1,0 +1,31 @@
+<div class="row main-top">
+	<div class="avatar col-4">
+		<img src="http://www.placecage.com/c/200/300">
+	</div>
+
+	<div class="col-8">
+		<div class="role">
+			<h2><%= @profile.role.upcase %></h2>
+			<blockquote>"<%= @profile.quote %>"</blockquote>
+		</div>
+
+		<div class="experience">
+			<h2>Experience</h2>
+			<% @experiences.each do |experience| %>
+				<h3><%= experience.role %></h3>
+				<h4><%= experience.company %></h4>
+				<span> <%= experience.start_date %> </span>
+				<span> -  <%= experience.end_date %> </span>
+				<p><%= experience.description %></p>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<% if @profile.role == "mentor" %>
+	<div class="insights">
+		<h2>INSIGHTS</h2>
+		<blockquote>"<%= @profile.insights %>"</blockquote>
+	</div>
+<% end %>
