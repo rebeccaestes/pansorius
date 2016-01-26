@@ -4497,3 +4497,1543 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 13:33:49 -0500
+
+
+Started GET "/" for ::1 at 2016-01-25 13:45:30 -0500
+
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  c:/Ruby21/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  c:/Ruby21/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (458.3ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (460.6ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (1046.2ms)
+  [1m[36m (5016.2ms)[0m  [1mDROP DATABASE IF EXISTS "pansorius_development"[0m
+  [1m[35m (4.0ms)[0m  CREATE DATABASE "pansorius_development" ENCODING = 'unicode'
+  [1m[36mSQL (26.9ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (248.4ms)[0m  CREATE TABLE "profiles" ("id" serial primary key, "quote" character varying, "user_id" integer) 
+  [1m[36m (75.2ms)[0m  [1mCREATE  INDEX  "index_profiles_on_user_id" ON "profiles" USING btree ("user_id")[0m
+  [1m[35m (134.2ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet) 
+  [1m[36m (64.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (44.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (113.4ms)[0m  [1mCREATE TABLE "values" ("id" serial primary key, "value" character varying, "user_id" integer, "profile_id" integer) [0m
+  [1m[35m (68.0ms)[0m  CREATE  INDEX  "index_values_on_profile_id" ON "values" USING btree ("profile_id")
+  [1m[36m (44.7ms)[0m  [1mCREATE  INDEX  "index_values_on_user_id" ON "values" USING btree ("user_id")[0m
+  [1m[35m (74.7ms)[0m  ALTER TABLE "profiles" ADD CONSTRAINT "fk_rails_e424190865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (22.0ms)[0m  [1mALTER TABLE "values" ADD CONSTRAINT "fk_rails_5c120f5643"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+[0m
+  [1m[35m (6.5ms)[0m  ALTER TABLE "values" ADD CONSTRAINT "fk_rails_690f376fee"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (61.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (59.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (7.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160122185822')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160122174331')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160122184859')
+  [1m[36m (163.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (42.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (8.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20160122174331)
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36m (185.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet) [0m
+  [1m[35m (42.8ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (63.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160122174331"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProfiles (20160122184859)
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36m (219.0ms)[0m  [1mCREATE TABLE "profiles" ("id" serial primary key, "quote" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (136.4ms)[0m  CREATE  INDEX  "index_profiles_on_user_id" ON "profiles"  ("user_id")
+  [1m[36m (51.5ms)[0m  [1mALTER TABLE "profiles" ADD CONSTRAINT "fk_rails_e424190865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160122184859"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateValues (20160125204649)
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36m (167.1ms)[0m  [1mCREATE TABLE "values" ("id" serial primary key, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125204649"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateValuetaggings (20160125205014)
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36m (75.7ms)[0m  [1mCREATE TABLE "valuetaggings" ("id" serial primary key, "profile_id" integer, "value_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (61.5ms)[0m  CREATE  INDEX  "index_valuetaggings_on_profile_id" ON "valuetaggings"  ("profile_id")
+  [1m[36m (67.3ms)[0m  [1mCREATE  INDEX  "index_valuetaggings_on_value_id" ON "valuetaggings"  ("value_id")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125205014"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (9.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (9.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (9.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (12.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSkills (20160125231553)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (457.5ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "skill" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125231553"]]
+  [1m[36m (48.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSkilltaggings (20160125232443)
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSkilltaggings (20160125232443)
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36m (121.8ms)[0m  [1mCREATE TABLE "skilltaggings" ("id" serial primary key, "profile_id" integer, "skill_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (62.2ms)[0m  CREATE  INDEX  "index_skilltaggings_on_profile_id" ON "skilltaggings"  ("profile_id")
+  [1m[36m (100.6ms)[0m  [1mCREATE  INDEX  "index_skilltaggings_on_skill_id" ON "skilltaggings"  ("skill_id")[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125232443"]]
+  [1m[36m (46.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (11.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skilltaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (9.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (9.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (9.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (17.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDetailsToProfiles (20160126013500)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE "profiles" ADD "type" character varying[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126013500"]]
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveQuoteFromProfiles (20160126023847)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (10.0ms)[0m  [1mALTER TABLE "profiles" DROP "quote"[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126023847"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddQuoteToProfiles (20160126024507)
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mALTER TABLE "profiles" ADD "quote" text[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126024507"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateExperiences (20160126031154)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (135.9ms)[0m  [1mCREATE TABLE "experiences" ("id" serial primary key, "role" character varying, "company" character varying, "start" character varying, "end" character varying, "description" text, "profile_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (40.7ms)[0m  CREATE  INDEX  "index_experiences_on_profile_id" ON "experiences"  ("profile_id")
+  [1m[36m (41.8ms)[0m  [1mALTER TABLE "experiences" ADD CONSTRAINT "fk_rails_0229332b88"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126031154"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (10.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'experiences'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (9.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (11.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (14.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skilltaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (13.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-01-25 22:31:51 -0500
+
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  c:/Ruby21/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  c:/Ruby21/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (429.2ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (407.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (1049.7ms)
+
+
+Started GET "/" for ::1 at 2016-01-25 22:33:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (12.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 3960ms (Views: 3689.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-25 22:33:26 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-25 22:33:26 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-25 22:33:27 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-25 22:33:28 -0500
+
+
+Started GET "/" for ::1 at 2016-01-26 09:58:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 1640ms (Views: 1397.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-26 09:58:10 -0500
+
+
+Started GET "/experiences" for ::1 at 2016-01-26 09:59:06 -0500
+Processing by ExperiencesController#index as HTML
+  [1m[35mExperience Load (14.5ms)[0m  SELECT "experiences".* FROM "experiences"
+  Rendered experiences/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 309ms (Views: 272.6ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/experiences/new" for ::1 at 2016-01-26 09:59:12 -0500
+Processing by ExperiencesController#new as HTML
+  Rendered experiences/_form.html.erb (402.4ms)
+  Rendered experiences/new.html.erb within layouts/application (446.0ms)
+Completed 200 OK in 718ms (Views: 656.6ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/experiences" for ::1 at 2016-01-26 09:59:18 -0500
+Processing by ExperiencesController#index as HTML
+  [1m[36mExperience Load (2.0ms)[0m  [1mSELECT "experiences".* FROM "experiences"[0m
+  Rendered experiences/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 232ms (Views: 229.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:04:31 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 329ms (Views: 290.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:06:03 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mProfile Load (6.5ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 335ms (Views: 274.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 10:06:04 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 10:06:05 -0500
+
+
+Started GET "/" for ::1 at 2016-01-26 10:06:16 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mProfile Load (2.5ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 270ms (Views: 260.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 10:06:19 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mProfile Load (1.5ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 266ms (Views: 256.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 10:06:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 10:06:20 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 10:06:20 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 10:06:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 10:06:21 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 10:06:21 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:06:21 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:06:21 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 10:06:21 -0500
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:06:23 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mProfile Load (2.0ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 271ms (Views: 261.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:07:15 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 326ms (Views: 280.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 10:07:17 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 10:07:17 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 10:07:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 10:07:17 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 10:07:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 10:07:18 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:07:18 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:07:18 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 10:07:18 -0500
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:07:37 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 319ms (Views: 279.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 10:07:39 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 10:07:39 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 10:07:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 10:07:39 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 10:07:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 10:07:40 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:07:40 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:07:40 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 10:07:40 -0500
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:09:09 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 338ms (Views: 287.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 10:09:11 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 10:09:11 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 10:09:11 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 10:09:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 10:09:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 10:09:12 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:09:12 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 10:09:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 10:09:12 -0500
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 10:23:35 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/profiles_controller.rb:1:in `<top (required)>'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (395.6ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (456.3ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (1123.2ms)
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:11 -0500
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:15 -0500
+  [1m[35mProfile Load (1.5ms)[0m  SELECT "profiles".* FROM "profiles"
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:22 -0500
+  [1m[36mUser Load (18.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:26 -0500
+  [1m[35mExperience Load (2.0ms)[0m  SELECT "experiences".* FROM "experiences"
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:30 -0500
+  [1m[36mSkill Load (9.5ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:35 -0500
+
+
+Started PUT "/console/repl_sessions/ef1173404ecaed3ccc2c93c42fc0e894" for ::1 at 2016-01-26 10:24:40 -0500
+
+
+Started GET "/users" for ::1 at 2016-01-26 10:25:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (663.4ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (501.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (1011.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-01-26 10:25:53 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (12.9ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/registrations/new.html.erb within layouts/application (94.3ms)
+Completed 200 OK in 432ms (Views: 391.0ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users" for ::1 at 2016-01-26 10:26:10 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n1uAv97uc6WxmwRkPS6bdOy1glvIeSzsGIFGgr+B3uOfndPHIw7k9e4cW0rP75pohH3Y5iVstBFbjGLjJAiMA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mUser Exists (6.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (6.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/registrations/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 1373ms (Views: 312.1ms | ActiveRecord: 29.8ms)
+
+
+Started POST "/users" for ::1 at 2016-01-26 10:26:24 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rWEkNaPL3eKmAqwm5b4oEkUMM3nNwIw0UvNoE7CHAFPdYj14QDxfv+d8sVpedSwWNK8SEzp02len/1yCNuklGA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (1.9ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (4.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (7.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/registrations/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 776ms (Views: 371.6ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/users" for ::1 at 2016-01-26 10:26:38 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZO+EXrcwyI3ZjPr1O/YQKoLda9fCOkltpW4JlsaAySQU7J0TVMdK0Jjy54mAPRQu835KvTWOHw5QYj0HQO7sbw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (1.8ms)[0m  BEGIN
+  [1m[36mUser Exists (2.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "users" ("email", "encrypted_password") VALUES ($1, $2) RETURNING "id"  [["email", "test@test.com"], ["encrypted_password", "$2a$10$nTAgd9QaT.Ey/V4gsPbQ2.GNV4Esx7tP5LE3341uhRSqWF2insq6a"]]
+  [1m[36m (16.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (22.8ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5 WHERE "users"."id" = $6[0m  [["last_sign_in_at", "2016-01-26 15:26:38.590388"], ["current_sign_in_at", "2016-01-26 15:26:38.590388"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["id", 1]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 578ms (ActiveRecord: 53.8ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 10:26:38 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.0ms)
+
+NoMethodError (undefined method `profiles' for #<User:0x9630510>):
+  app/controllers/profiles_controller.rb:6:in `index'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.3ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (381.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (456.2ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (982.7ms)
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:26:56 -0500
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users"
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:27:03 -0500
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:27:07 -0500
+  [1m[35mUser Load (2.9ms)[0m  SELECT "users".* FROM "users"
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:27:40 -0500
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", nil]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:27:49 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:27:55 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:13 -0500
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = $1  [["email", "test@test.com"]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:31 -0500
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = $1[0m  [["email", "test@test.com"]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:32 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:39 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:41 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:49 -0500
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:28:53 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:29:38 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:31:04 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:31:20 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:31:27 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:31:29 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:32:37 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:02 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:23 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:34 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:41 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:55 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:34:59 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:35:04 -0500
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (61.2ms)[0m  INSERT INTO "profiles" ("user_id", "type", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 1], ["type", "mentor"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 15:35:04.559111"], ["updated_at", "2016-01-26 15:35:04.559111"]]
+  [1m[36m (17.1ms)[0m  [1mCOMMIT[0m
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:35:06 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:35:10 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:35:18 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:08 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:15 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:20 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:26 -0500
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:32 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:37 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:36:44 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:37:01 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:37:15 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:37:23 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:37:38 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:37:50 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:38:01 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:38:50 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:24 -0500
+  [1m[35mExperience Load (1.5ms)[0m  SELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1  [["profile_id", 1]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:28 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:31 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:38 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:40 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:44 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:48 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:39:52 -0500
+  [1m[36mExperience Load (2.3ms)[0m  [1mSELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1[0m  [["profile_id", 1]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:00 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:06 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:10 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:13 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:29 -0500
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "experiences" ("role", "company", "start", "end", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["role", "Software Developer"], ["company", "Optoro"], ["start", "January 2016"], ["end", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 15:40:29.028096"], ["updated_at", "2016-01-26 15:40:29.028096"]]
+  [1m[35m (40.1ms)[0m  COMMIT
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:35 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:40 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:54 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:40:58 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:02 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:13 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:16 -0500
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "experiences" ("profile_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["profile_id", 1], ["created_at", "2016-01-26 15:41:16.605373"], ["updated_at", "2016-01-26 15:41:16.605373"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:21 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:29 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:41:40 -0500
+  [1m[35mExperience Load (2.0ms)[0m  SELECT "experiences".* FROM "experiences"
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:10 -0500
+  [1m[36mExperience Load (18.4ms)[0m  [1mSELECT  "experiences".* FROM "experiences" WHERE "experiences"."id" = $1 LIMIT 1[0m  [["id", 2]]
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:12 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:19 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:30 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:38 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:44 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:42:48 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:09 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:12 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:15 -0500
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "experiences" SET "role" = $1, "company" = $2, "start" = $3, "end" = $4, "description" = $5, "updated_at" = $6 WHERE "experiences"."id" = $7[0m  [["role", "Web Developer"], ["company", "General Assembly"], ["start", "Janurary 2016"], ["end", "Present"], ["description", "Made websites"], ["updated_at", "2016-01-26 15:43:15.484253"], ["id", 2]]
+  [1m[35m (3.8ms)[0m  COMMIT
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:17 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:20 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:25 -0500
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:30 -0500
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:43:48 -0500
+  [1m[36mExperience Load (2.0ms)[0m  [1mSELECT "experiences".* FROM "experiences"[0m
+
+
+Started PUT "/console/repl_sessions/583010a595bbb331a5ce16ba5ca56f7f" for ::1 at 2016-01-26 10:44:12 -0500
+  [1m[35mProfile Load (19.2ms)[0m  SELECT "profiles".* FROM "profiles"
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to FixColumnName (20160126154830)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (50.7ms)[0m  [1mALTER TABLE "profiles" RENAME COLUMN "type" TO "role"[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126154830"]]
+  [1m[36m (62.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (16.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'experiences'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (12.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (17.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skilltaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (13.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (16.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (13.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (5018.0ms)[0m  [1mDROP DATABASE IF EXISTS "pansorius_development"[0m
+  [1m[35m (837.5ms)[0m  DROP DATABASE IF EXISTS "pansorius_test"
+  [1m[36m (3.9ms)[0m  [1mCREATE DATABASE "pansorius_development" ENCODING = 'unicode'[0m
+  [1m[35m (9040.8ms)[0m  CREATE DATABASE "pansorius_test" ENCODING = 'unicode'
+  [1m[36mSQL (2.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (128.0ms)[0m  DROP TABLE "experiences" CASCADE
+  [1m[36m (100.9ms)[0m  [1mCREATE TABLE "experiences" ("id" serial primary key, "role" character varying, "company" character varying, "start" character varying, "end" character varying, "description" text, "profile_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (42.8ms)[0m  CREATE  INDEX  "index_experiences_on_profile_id" ON "experiences" USING btree ("profile_id")
+  [1m[36m (34.4ms)[0m  [1mDROP TABLE "profiles" CASCADE[0m
+  [1m[35m (78.7ms)[0m  CREATE TABLE "profiles" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer, "role" character varying, "quote" text) 
+  [1m[36m (34.9ms)[0m  [1mCREATE  INDEX  "index_profiles_on_user_id" ON "profiles" USING btree ("user_id")[0m
+  [1m[35m (30.0ms)[0m  DROP TABLE "skills" CASCADE
+  [1m[36m (193.8ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "skill" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (39.0ms)[0m  DROP TABLE "skilltaggings" CASCADE
+  [1m[36m (106.5ms)[0m  [1mCREATE TABLE "skilltaggings" ("id" serial primary key, "profile_id" integer, "skill_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (39.3ms)[0m  CREATE  INDEX  "index_skilltaggings_on_profile_id" ON "skilltaggings" USING btree ("profile_id")
+  [1m[36m (61.7ms)[0m  [1mCREATE  INDEX  "index_skilltaggings_on_skill_id" ON "skilltaggings" USING btree ("skill_id")[0m
+  [1m[35m (35.8ms)[0m  DROP TABLE "users" CASCADE
+  [1m[36m (102.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet) [0m
+  [1m[35m (41.8ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (43.9ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (30.6ms)[0m  DROP TABLE "values" CASCADE
+  [1m[36m (96.8ms)[0m  [1mCREATE TABLE "values" ("id" serial primary key, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (36.3ms)[0m  DROP TABLE "valuetaggings" CASCADE
+  [1m[36m (34.6ms)[0m  [1mCREATE TABLE "valuetaggings" ("id" serial primary key, "profile_id" integer, "value_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (39.6ms)[0m  CREATE  INDEX  "index_valuetaggings_on_profile_id" ON "valuetaggings" USING btree ("profile_id")
+  [1m[36m (34.9ms)[0m  [1mCREATE  INDEX  "index_valuetaggings_on_value_id" ON "valuetaggings" USING btree ("value_id")[0m
+  [1m[35m (34.2ms)[0m  ALTER TABLE "experiences" ADD CONSTRAINT "fk_rails_0229332b88"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+
+  [1m[36m (27.3ms)[0m  [1mALTER TABLE "profiles" ADD CONSTRAINT "fk_rails_e424190865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (13.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (8.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (318.2ms)[0m  CREATE TABLE "experiences" ("id" serial primary key, "role" character varying, "company" character varying, "start" character varying, "end" character varying, "description" text, "profile_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (37.7ms)[0m  [1mCREATE  INDEX  "index_experiences_on_profile_id" ON "experiences" USING btree ("profile_id")[0m
+  [1m[35m (90.2ms)[0m  CREATE TABLE "profiles" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer, "role" character varying, "quote" text) 
+  [1m[36m (39.9ms)[0m  [1mCREATE  INDEX  "index_profiles_on_user_id" ON "profiles" USING btree ("user_id")[0m
+  [1m[35m (74.9ms)[0m  CREATE TABLE "skills" ("id" serial primary key, "skill" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (36.7ms)[0m  [1mCREATE TABLE "skilltaggings" ("id" serial primary key, "profile_id" integer, "skill_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (31.4ms)[0m  CREATE  INDEX  "index_skilltaggings_on_profile_id" ON "skilltaggings" USING btree ("profile_id")
+  [1m[36m (47.3ms)[0m  [1mCREATE  INDEX  "index_skilltaggings_on_skill_id" ON "skilltaggings" USING btree ("skill_id")[0m
+  [1m[35m (61.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet) 
+  [1m[36m (31.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (32.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (75.5ms)[0m  [1mCREATE TABLE "values" ("id" serial primary key, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (52.0ms)[0m  CREATE TABLE "valuetaggings" ("id" serial primary key, "profile_id" integer, "value_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (39.6ms)[0m  [1mCREATE  INDEX  "index_valuetaggings_on_profile_id" ON "valuetaggings" USING btree ("profile_id")[0m
+  [1m[35m (33.7ms)[0m  CREATE  INDEX  "index_valuetaggings_on_value_id" ON "valuetaggings" USING btree ("value_id")
+  [1m[36m (57.3ms)[0m  [1mALTER TABLE "experiences" ADD CONSTRAINT "fk_rails_0229332b88"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+[0m
+  [1m[35m (24.0ms)[0m  ALTER TABLE "profiles" ADD CONSTRAINT "fk_rails_e424190865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (104.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (67.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (9.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160126154830')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160122174331')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160122184859')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160125204649')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160125205014')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160125231553')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160125232443')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160126013500')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160126023847')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160126024507')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160126031154')
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to FixColumnNameExperience (20160126155750)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mALTER TABLE "experiences" RENAME COLUMN "start" TO "start_date"[0m
+  [1m[35m (7.0ms)[0m  ALTER TABLE "experiences" RENAME COLUMN "end" TO "end_date"
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160126155750"]]
+  [1m[35m (36.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (16.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'experiences'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skilltaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (12.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (9.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2016-01-26 11:03:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (22.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 532ms (Views: 441.5ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 11:03:52 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 11:03:53 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 11:03:53 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2016-01-26 11:04:11 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (5.8ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/devise-3.5.3/app/views/devise/registrations/new.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 329ms (Views: 304.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-01-26 11:04:40 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4qXfFyPSMR7DJShqUg1ZKPm7DLW1ZrXzF6QGYj6hMwPiY4xv3jKmTpyid0SgzFg0kXNWCFhzLQ5UqSIDpShhw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (6.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password") VALUES ($1, $2) RETURNING "id"[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$10$BaDXn46u/zbwqCn6AL5z1.eygMiTYzeYyPOb1sZ7keMi/MAuRVhrW"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5 WHERE "users"."id" = $6  [["last_sign_in_at", "2016-01-26 16:04:41.008143"], ["current_sign_in_at", "2016-01-26 16:04:41.008143"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["id", 1]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 438ms (ActiveRecord: 20.0ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 11:04:41 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (26.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 27.8ms)
+
+NoMethodError (undefined method `profiles' for #<User:0x9edd500>):
+  app/controllers/profiles_controller.rb:6:in `index'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (358.2ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (372.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (847.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (14.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (25.7ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.0ms)[0m  INSERT INTO "profiles" ("role", "user_id", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["user_id", 1], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 16:07:02.812303"], ["updated_at", "2016-01-26 16:07:02.812303"]]
+  [1m[36m (30.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (2.5ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 16:07:02.954850"], ["updated_at", "2016-01-26 16:07:02.954850"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+
+
+Started PUT "/console/repl_sessions/39858a640af1d8a72b8c62dd490b8078" for ::1 at 2016-01-26 11:08:55 -0500
+  [1m[36mUser Load (30.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started PUT "/console/repl_sessions/39858a640af1d8a72b8c62dd490b8078" for ::1 at 2016-01-26 11:08:58 -0500
+
+
+Started PUT "/console/repl_sessions/39858a640af1d8a72b8c62dd490b8078" for ::1 at 2016-01-26 11:09:02 -0500
+  [1m[35mProfile Load (18.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+
+
+Started PUT "/console/repl_sessions/39858a640af1d8a72b8c62dd490b8078" for ::1 at 2016-01-26 11:09:12 -0500
+  [1m[36mExperience Load (18.3ms)[0m  [1mSELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1[0m  [["profile_id", 1]]
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 11:11:52 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (3.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 369ms (Views: 250.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/profiles" for ::1 at 2016-01-26 11:12:44 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (2.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 377ms (Views: 264.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.self-b5fde35c4248e9a1a79d540370ed73205313effe6d34c8bd87afb02ee62e73af.css?body=1" for ::1 at 2016-01-26 11:12:45 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-26 11:12:46 -0500
