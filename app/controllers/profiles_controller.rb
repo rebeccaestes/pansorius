@@ -6,10 +6,9 @@ class ProfilesController < ApplicationController
   	puts "*" * 50
   	puts current_user
     if current_user
-      @profiles = current_user.profile
-    else
-      @profiles = Profile.all
+      @profile = current_user.profile      
     end
+    @profiles = Profile.all
   end
 
   def show
