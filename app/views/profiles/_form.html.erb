@@ -1,0 +1,27 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this experience from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.select(:role, [['Mentor', 'mentor'], ['Protege', 'protege']], {:prompt => 'Select Your Desired Role',:include_blank => false}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quote %><br>
+    <%= f.text_area :quote %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -92,3 +92,51 @@
   background-color: #fff362;
   border: 2px solid #fff362;
 }
+
+
+/*for the show page - move to different file but fine here for now*/
+.row,
+.col-4,
+.col-8 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.row {
+  width: 100%;
+}
+
+.main-top {
+  position: relative;
+}
+
+.col-4 {
+  width: 33%;
+}
+
+.col-8 {
+  width: 66%;
+}
+
+
+.role,
+.experience,
+.avatar {
+  position: absolute;
+}
+
+.role {
+  top: 0;
+  right: 0;
+}
+
+.experience {
+  top: 313px;
+  right: 0;
+}
+
+.avatar {
+  top: 0;
+  left: 0;
+}
