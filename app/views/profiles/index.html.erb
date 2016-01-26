@@ -5,25 +5,27 @@
 		<input value="search again"></input>
 	</div>
 
-<!--  --></div>
+	</div>
 	  <% @profiles.each do |profile| %>
   		<% if profile.image_url != nil %>
-  		  <div class="profile-card">
-  				<div class="card-left">
-  				<div class="card-line"></div>
-	  				<%= image_tag profile.image_url, class: 'user-img' %>
-	  				<div class="values">
-	  					<div class="value">Honesty</div> 
-	  					<div class="value">Dedication</div>
-	  					<div>Motivation</div>
-  					</div>
-  				</div>
-	  			<div class="card-right">
-	  				<span class="quote"><%= profile.quote %></span>
-	  				<p>I live here</p>
-			  		<p><%= profile.insights %></p>
+  			<%= link_to profile_path(profile.id) do %>
+	  		  <div class="profile-card">
+	  				<div class="card-left">
+	  				<div class="card-line"></div>
+		  				<%= image_tag profile.image_url, class: 'user-img' %>
+		  				<div class="values">
+		  					<div class="value">Honesty</div> 
+		  					<div class="value">Dedication</div>
+		  					<div>Motivation</div>
+	  					</div>
+	  				</div>
+		  			<div class="card-right">
+		  				<span class="quote"><%= profile.quote %></span>
+		  				<p>I live here</p>
+				  		<p><%= profile.insights %></p>
+			  		</div>
 		  		</div>
-	  		</div>
+		  		<% end %>
   		<% end %>
 	<% end %>
 

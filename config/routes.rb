@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :experiences
-  root to: 'profiles#index'
+  root to: 'pages#index'
   devise_for :users
 
   resources :profiles
