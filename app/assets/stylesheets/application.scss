@@ -16,6 +16,22 @@
 
 @import "materialize";
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.mentor {
+  color: #75cfff;
+}
+
+.protege {
+  color: #e0d443;
+}
+
 .protege-column,
 .mentor-column {
   height: 250px;
@@ -112,50 +128,41 @@
   border: 2px solid #fff362;
 }
 
+/*profile show page styling - move to separate file eventually*/
+.profile {
 
-/*for the show page - move to different file but fine here for now*/
-.row,
-.col-4,
-.col-8 {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
+  h2 {
+    font-size: 36px;
+  }
 
-.row {
-  width: 100%;
-}
+  blockquote {
+    font-size: 18px;
+  }
 
-.main-top {
-  position: relative;
-}
+  h3 {
+    margin: 25px 0 0 0;
+    font-size: 24px;
+  }
 
-.col-4 {
-  width: 33%;
-}
+  h4,
+  span,
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
 
-.col-8 {
-  width: 66%;
-}
+  img {
+    border: 8px solid #f0f0f0;
+    border-radius: 200px;
+  }
 
+  .role,
+  .experience {
+    background-color: #f0f0f0;
+  }
 
-.role,
-.experience,
-.avatar {
-  position: absolute;
-}
-
-.role {
-  top: 0;
-  right: 0;
-}
-
-.experience {
-  top: 313px;
-  right: 0;
-}
-
-.avatar {
-  top: 0;
-  left: 0;
+  .experience {
+    height: 682px;
+    overflow-y: scroll;
+  }
 }
