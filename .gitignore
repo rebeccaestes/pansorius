@@ -1,1 +1,4 @@
-config/database.yml
+/log/*.log
+/tmp
+config/secrets.yml
+tmp/pids/server.pid
