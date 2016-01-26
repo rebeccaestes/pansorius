@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :profiles
+
+  get '/about', to: 'pages#about' 
+  get '/home', to: 'pages#home' 
+
 end
