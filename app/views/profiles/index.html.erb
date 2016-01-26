@@ -1,12 +1,16 @@
-<div class="profiles-container">
 
-	<input value="search"></input> <input value="search again"></input>
 
-<!--  -->
+	<div class="search">
+		<input value="search"></input>
+		<input value="search again"></input>
+	</div>
+
+<!--  --></div>
 	  <% @profiles.each do |profile| %>
   		<% if profile.image_url != nil %>
   		  <div class="profile-card">
   				<div class="card-left">
+  				<div class="card-line"></div>
 	  				<%= image_tag profile.image_url, class: 'user-img' %>
 	  				<div class="values">
 	  					<div class="value">Honesty</div> 
@@ -29,5 +33,5 @@
 
 
 
-</div>
+
 </div>
