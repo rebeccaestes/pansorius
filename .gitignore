@@ -1,4 +1,5 @@
 /log/*.log
-/tmp
+/tmp/
 config/secrets.yml
 tmp/pids/server.pid
+log/development.log
