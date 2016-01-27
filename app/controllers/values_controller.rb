@@ -10,7 +10,6 @@ class ValuesController < ApplicationController
   # GET /experiences/new
   def new
     @value = Value.new
-    # @experience = Experience.new
   end
 
   # # GET /experiences/1/edit
