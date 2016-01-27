@@ -6,6 +6,7 @@
 
 		<div class='values'>
 			<h2>Values</h2>
+			<%= link_to 'New Value', new_profile_value_path(@profile) %>
 			<% @values.each do |value| %>
 				<p><%= value %></p>
 				<% end %>
