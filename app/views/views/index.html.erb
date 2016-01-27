@@ -1,0 +1,10 @@
+<h1>Values</h1>
+<div class='values'>
+  <h1>Values</h1>
+  <%= link_to '+', new_profile_value_path %>
+  <ul>
+    <% @values.each do |value| %>
+    <div class='value-item'><li><%= value.value %></li></div>
+    <% end %>
+  </ul>
+</div>

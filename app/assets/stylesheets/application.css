@@ -144,3 +144,13 @@
   top: 0;
   left: 0;
 }
+.value-item {
+  position: 'absolute';
+    top: 500px;
+    left: 45px;
+    height: 50px;
+    width: 215px;
+    background-color: #86d5ff;
+    border: 2px solid #86d5ff;
+    border-radius: 5px;
+}
