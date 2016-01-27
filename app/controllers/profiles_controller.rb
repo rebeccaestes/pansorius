@@ -7,7 +7,7 @@ class ProfilesController < ApplicationController
   	puts "*" * 50
   	puts current_user
     if current_user
-      @profile = current_user.profile      
+      @profile = current_user.profile
     end
     @profiles = Profile.all
   end
@@ -77,6 +77,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:role, :quote, :name, :user_id, :insights)
+      params.require(:profile).permit(:role, :quote, :name, :user_id, :insights, :location, :image_url, :twitter, :facebook, :linkedin, :instagram)
     end
 end

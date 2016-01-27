@@ -4,6 +4,17 @@
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
+<<<<<<< HEAD
+		<div class='values'>
+			<h2>Values</h2>
+			<%= link_to 'New Value', new_profile_value_path(@profile) %>
+			<% @values.each do |value| %>
+				<p><%= value %></p>
+				<% end %>
+			</div>
+
+		<h2><%= @profile.name %></h2>
+=======
 
 <h2>Values</h2>
 		<div class='value-item' id='value0'>
@@ -27,6 +38,7 @@
 
 
 		<%= @profile.user %>
+>>>>>>> master
 
 		<div class="col s8">
 			<div class="role">
@@ -34,8 +46,10 @@
 				<% if current_user == @profile.user %>
 					<%= link_to 'edit', edit_profile_path(@profile) %>
 				<% end %>
+				<h4><%= @profile.location %></h3>
 				<blockquote>"<%= @profile.quote %>"</blockquote>
 			</div>
+
 			<div class="experience">
 				<h2>Experience</h2>
 				<% if current_user == @profile.user %>

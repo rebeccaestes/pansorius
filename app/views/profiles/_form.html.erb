@@ -12,6 +12,16 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
     <%= f.label :role %><br>
     <%= f.select(:role, [['Mentor', 'mentor'], ['Protege', 'protege']], {:prompt => 'Select Your Desired Role',:include_blank => false}, data: { behavior: "select-role" }) %>
   </div>
@@ -24,6 +34,31 @@
   <div class="field insights-form">
     <%= f.label :insights %><br>
     <%= f.text_area :insights %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter %>
+  </div>
+
+  <div class="field">
+    <%= f.label :linkedin %><br>
+    <%= f.text_field :linkedin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook %>
+  </div>
+
+  <div class="field">
+    <%= f.label :instagram %><br>
+    <%= f.text_field :instagram %>
   </div>
 
   <div class="actions">
