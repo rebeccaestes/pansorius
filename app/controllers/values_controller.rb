@@ -10,15 +10,26 @@ class ValuesController < ApplicationController
       @values = Value.all
     end
   end
-
+  def show
+  end
   def new
     @profile = Profile.find(params[:profile_id])
     @value = Value.new
   end
   def create
-    @profile = Profile.find(params[:profile_id])
-    @value = @profile.values.create(value_params)
-    redirect_to profile_path(@profile)
+    # @profile = Profile.find(params[:profile_id])
+    # @value = current_user.values.create(value_params)
+    @value = Value.new(value_params)
+
+    respond_to do |format|
+      if @value.save
+        format.html { redirect_to @value, notice: 'Value was successfully created.' }
+        format.json { render :show, status: :created, location: @value }
+      else
+        format.html { render :new }
+        format.json { render json: @value.errors, status: :unprocessable_entity }
+      end
+    end
   end
   def show
 
@@ -69,8 +80,8 @@ class ValuesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_experience
-      # @experience = Experience.find(params[:id])
+    def value_params
+      params.requre(:value).permit(:user_id, :profile_id)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
