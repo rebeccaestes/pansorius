@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     end
   end
 
+  get '/mentors', to: 'profiles#mentors'
+  get '/proteges', to: 'profiles#proteges'
+
   get '/about', to: 'pages#about'
   get '/home', to: 'pages#home'
 end

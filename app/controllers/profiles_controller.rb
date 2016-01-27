@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
   # end
+
   def index
   	puts "*" * 50
   	puts current_user
@@ -9,6 +10,14 @@ class ProfilesController < ApplicationController
       @profile = current_user.profile      
     end
     @profiles = Profile.all
+  end
+
+  def mentors
+    @profiles = Profile.where(role: 'mentor')
+  end
+
+  def proteges
+    @profiles = Profile.where(role: 'protege')
   end
 
   def show
