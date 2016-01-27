@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'pry'
 # user authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

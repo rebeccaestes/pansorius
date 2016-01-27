@@ -76,6 +76,19 @@ ActiveRecord::Schema.define(version: 20160127013455) do
     t.string  "value"
     t.integer "user_id"
     t.integer "profile_id"
+<<<<<<< HEAD
+=======
+  end
+
+  add_index "values", ["profile_id"], name: "index_values_on_profile_id", using: :btree
+  add_index "values", ["user_id"], name: "index_values_on_user_id", using: :btree
+
+  create_table "valuetaggings", force: :cascade do |t|
+    t.integer  "profile_id"
+    t.integer  "value_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> origin/materialize
   end
 
   add_index "values", ["profile_id"], name: "index_values_on_profile_id", using: :btree

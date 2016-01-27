@@ -9132,6 +9132,7 @@ Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 13:45:04 -0500
+<<<<<<< HEAD
 
 
 Started GET "/" for ::1 at 2016-01-26 14:27:19 -0500
@@ -12361,6 +12362,970 @@ Migrations are pending. To resolve this issue, run:
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  [1m[36m (11.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20160122174331)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160122174331"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProfiles (20160122184859)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "profiles" ("id" serial primary key, "quote" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_profiles_on_user_id" ON "profiles"  ("user_id")
+  [1m[36m (2.7ms)[0m  [1mALTER TABLE "profiles" ADD CONSTRAINT "fk_rails_e424190865"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160122184859"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateValues (20160122185822)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "values" ("id" serial primary key, "value" character varying, "user_id" integer, "profile_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_values_on_user_id" ON "values"  ("user_id")
+  [1m[36m (1.8ms)[0m  [1mCREATE  INDEX  "index_values_on_profile_id" ON "values"  ("profile_id")[0m
+  [1m[35m (3.4ms)[0m  ALTER TABLE "values" ADD CONSTRAINT "fk_rails_690f376fee"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (2.5ms)[0m  [1mALTER TABLE "values" ADD CONSTRAINT "fk_rails_5c120f5643"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160122185822"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateValuetaggings (20160125205014)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "valuetaggings" ("id" serial primary key, "profile_id" integer, "value_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_valuetaggings_on_profile_id" ON "valuetaggings"  ("profile_id")
+  [1m[36m (1.3ms)[0m  [1mCREATE  INDEX  "index_valuetaggings_on_value_id" ON "valuetaggings"  ("value_id")[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125205014"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSkills (20160125231553)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "skill" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125231553"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSkilltaggings (20160125232443)
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "skilltaggings" ("id" serial primary key, "profile_id" integer, "skill_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.1ms)[0m  CREATE  INDEX  "index_skilltaggings_on_profile_id" ON "skilltaggings"  ("profile_id")
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX  "index_skilltaggings_on_skill_id" ON "skilltaggings"  ("skill_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125232443"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddDetailsToProfiles (20160126013500)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "profiles" ADD "type" character varying[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126013500"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveQuoteFromProfiles (20160126023847)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "profiles" DROP "quote"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126023847"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddQuoteToProfiles (20160126024507)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "profiles" ADD "quote" text[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126024507"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateExperiences (20160126031154)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "experiences" ("id" serial primary key, "role" character varying, "company" character varying, "start" character varying, "end" character varying, "description" text, "profile_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_experiences_on_profile_id" ON "experiences"  ("profile_id")
+  [1m[36m (1.7ms)[0m  [1mALTER TABLE "experiences" ADD CONSTRAINT "fk_rails_0229332b88"
+FOREIGN KEY ("profile_id")
+  REFERENCES "profiles" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126031154"]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+Migrating to FixColumnName (20160126154830)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "profiles" RENAME COLUMN "type" TO "role"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160126154830"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to FixColumnNameExperience (20160126155750)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (1.5ms)[0m  [1mALTER TABLE "experiences" RENAME COLUMN "start" TO "start_date"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "experiences" RENAME COLUMN "end" TO "end_date"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160126155750"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddInsightsToProfile (20160126164944)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "profiles" ADD "insights" text
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160126164944"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'experiences'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'profiles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skilltaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'values'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'valuetaggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 19:22:27.585007"], ["updated_at", "2016-01-26 19:22:27.585007"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 19:22:27.604690"], ["updated_at", "2016-01-26 19:22:27.604690"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "values" ("value", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["value", "awesomeness"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 19:22:57.058664"], ["updated_at", "2016-01-26 19:22:57.058664"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 19:22:57.075991"], ["updated_at", "2016-01-26 19:22:57.075991"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 19:23:03.867069"], ["updated_at", "2016-01-26 19:23:03.867069"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.6ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 19:23:03.886297"], ["updated_at", "2016-01-26 19:23:03.886297"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 19:23:20.607482"], ["updated_at", "2016-01-26 19:23:20.607482"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 19:23:20.624581"], ["updated_at", "2016-01-26 19:23:20.624581"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-26 19:23:28.317141"], ["updated_at", "2016-01-26 19:23:28.317141"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.5ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-26 19:23:28.335799"], ["updated_at", "2016-01-26 19:23:28.335799"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2016-01-26 14:23:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1812ms (Views: 1772.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-b0801003236ec40af9b19e22f39a30b2dbbf9cb34a93ec69d16493db18b1c38d.css?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-26 14:23:48 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2016-01-26 14:24:02 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/devise-3.5.3/app/views/devise/registrations/new.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 127ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-01-26 14:24:06 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R6IrS+mwev9B+dVj6P4suKumwKLRWZJDaTsCoTgmOgyWhUFMOPE1ZRsL6TSZ0AqerV4BXYL+hmk0jfFEDKcbog==", "user"=>{"email"=>"estes.rebecca@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'estes.rebecca@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password") VALUES ($1, $2) RETURNING "id"[0m  [["email", "estes.rebecca@gmail.com"], ["encrypted_password", "$2a$10$YzaZKRn/kang.kbieLilN.zlANcaQGErRZez6r37UeqlyqX1ykCdq"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5 WHERE "users"."id" = $6  [["last_sign_in_at", "2016-01-26 19:24:06.791468"], ["current_sign_in_at", "2016-01-26 19:24:06.791468"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:24:06 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 78ms (Views: 61.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:24:46 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.3ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `about_path' for #<#<Class:0x007fca93520318>:0x007fca98db0ac8>):
+    19:       <%= alert %>
+    20:     </span>
+    21:     <span class="links">
+    22:       <%= link_to 'about', about_path %>
+    23:       <% if !current_user %>
+    24:         <%= link_to 'sign up', new_user_registration_path %> <%= link_to 'login', new_user_session_path %>
+    25:       <% else %>
+  app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___664115950054877882_70254080705680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.8ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:25:04 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.3ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 84.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/application.self-b0801003236ec40af9b19e22f39a30b2dbbf9cb34a93ec69d16493db18b1c38d.css?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2016-01-26 14:25:04 -0500
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 14:25:05 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-01-26 14:25:09 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"buJZtPNz85hsnvz8WFJCx+p63W97hMsxu1s0THg31Z6/xTOzIjK8AjZswKspfGTh7IIckCgj3xvm7cepTLb0MA=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:25:09 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:25:39 -0500
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/application.self-2a9e395489d245fb94185c2aa64ea89b97687a1a6c1b3c391b162e305fcce873.css?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for ::1 at 2016-01-26 14:25:39 -0500
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-26 14:25:40 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2016-01-26 14:25:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/devise-3.5.3/app/views/devise/shared/_links.html.erb (10.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/devise-3.5.3/app/views/devise/sessions/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-01-26 14:25:45 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOJKGSPUllURTP1TbA5iaWc+jVT+5WpIOtlc0uEetQWp1RVGMn5iYgO4nYbfmh4oxKAjdVSCLAtDSQka00bt5g==", "user"=>{"email"=>"estes.rebecca@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "estes.rebecca@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2 WHERE "users"."id" = $3[0m  [["current_sign_in_at", "2016-01-26 19:25:45.461224"], ["sign_in_count", 2], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:25:45 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.3ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:27:24 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.3ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 126ms (Views: 98.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/application.self-2a9e395489d245fb94185c2aa64ea89b97687a1a6c1b3c391b162e305fcce873.css?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for ::1 at 2016-01-26 14:27:24 -0500
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 14:27:25 -0500
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:27:26 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.7ms)
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:27:27 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (100.6ms)
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:27:51 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (100.9ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:28:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 637ms (Views: 573.8ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:28:11 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (120.1ms)
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:28:12 -0500
+
+LoadError (cannot load such file -- pry):
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.5ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:29:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 549ms (Views: 469.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-26 14:29:39 -0500
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:29:40 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 172ms (Views: 169.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/images/neue-skyline.png" for ::1 at 2016-01-26 14:29:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/neue-skyline.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> origin/materialize
   web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
@@ -12381,6 +13346,7 @@ Migrations are pending. To resolve this issue, run:
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -12420,6 +13386,32 @@ Migrations are pending. To resolve this issue, run:
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (160.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.1ms)
+
+
+Started GET "/assets/images/liberty_skyline-01.png" for ::1 at 2016-01-26 14:29:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/liberty_skyline-01.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> origin/materialize
   web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
@@ -12440,6 +13432,7 @@ Migrations are pending. To resolve this issue, run:
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /Users/ascreven/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -12749,3 +13742,165 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+=======
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (124.7ms)
+
+
+Started GET "/about" for ::1 at 2016-01-26 14:30:23 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 131ms (Views: 127.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/normalize.self-44d7d6f2e34520763e03f8eac764f04a009bba50a6e6437cdc16641e68f3bbc6.css?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/application.self-2a9e395489d245fb94185c2aa64ea89b97687a1a6c1b3c391b162e305fcce873.css?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/splash.self-bd8fb5ab765efa0189f2bcc24099c1df1ef5e5682edfa445c6362115222c9d36.css?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-01-26 14:30:24 -0500
+
+
+Started GET "/home" for ::1 at 2016-01-26 14:30:25 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 14:31:48 -0500
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.3ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+  Rendered profiles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 95ms (Views: 82.8ms | ActiveRecord: 2.1ms)
+>>>>>>> origin/materialize
