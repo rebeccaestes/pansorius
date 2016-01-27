@@ -4,7 +4,8 @@
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
-<<<<<<< HEAD
+<h2>Values</h2>
+		<% if @profile.user != current_user %>
 		<div class='values'>
 			<h2>Values</h2>
 			<%= link_to 'New Value', new_profile_value_path(@profile) %>
@@ -14,9 +15,7 @@
 			</div>
 
 		<h2><%= @profile.name %></h2>
-=======
-
-<h2>Values</h2>
+		<% else %>
 		<div class='value-item' id='value0'>
 			<% if @valuetaggings[0].blank? %>
 				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
@@ -35,10 +34,8 @@
 				<%= @valuetaggings[2] %>
 			<% end %>
 		</div>
+		<% end %>
 
-
-		<%= @profile.user %>
->>>>>>> master
 
 		<div class="col s8">
 			<div class="role">
