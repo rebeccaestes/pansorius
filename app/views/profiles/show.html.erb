@@ -8,7 +8,7 @@
 <h2>Values</h2>
 		<div class='value-item' id='value0'>
 			<% if @valuetaggings[0].blank? %>
-				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+				 <select value='@valuetaggings[0]'><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
 				<%= @valuetaggings[0] %>
 			<% end %>
 		</div>
