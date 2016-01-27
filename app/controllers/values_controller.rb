@@ -5,16 +5,21 @@ class ValuesController < ApplicationController
 
   def index
     if current_user
-      @values = current_user.valuetags
+      @values = current_user.values
     else
       @values = Value.all
     end
   end
+
   def new
-    @artist = User.find(params[:user_id])
+    @profile = Profile.find(params[:profile_id])
     @value = Value.new
   end
-
+  def create
+    @profile = Profile.find(params[:profile_id])
+    @value = @profile.values.create(value_params)
+    redirect_to profile_path(@profile)
+  end
   def show
 
 
