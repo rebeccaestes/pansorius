@@ -15,6 +15,24 @@
  */
 
 @import "materialize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.mentor {
+  color: #75cfff;
+}
+
+.protege {
+  color: #e0d443;
+}
 
 .protege-column,
 .mentor-column {
@@ -112,48 +130,55 @@
   border: 2px solid #fff362;
 }
 
-
-/*for the show page - move to different file but fine here for now*/
-.row,
-.col-4,
-.col-8 {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
+/*styling for the scrollbar*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-.row {
-  width: 100%;
-}
+/*profile show page styling - move to separate file eventually*/
+.profile {
 
-.main-top {
-  position: relative;
-}
+  h2 {
+    font-size: 36px;
+    display: inline-block;
+  }
 
-.col-4 {
-  width: 33%;
-}
+  blockquote {
+    font-size: 18px;
+  }
 
-.col-8 {
-  width: 66%;
-}
+  h3 {
+    margin: 25px 0 0 0;
+    font-size: 24px;
+  }
 
+  h4,
+  span,
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
 
-.role,
-.experience,
-.avatar {
-  position: absolute;
-}
+  img {
+    border: 8px solid #f0f0f0;
+    border-radius: 200px;
+  }
 
-.role {
-  top: 0;
-  right: 0;
-}
+  .role,
+  .experience {
+    background-color: #f0f0f0;
+  }
 
-.experience {
-  top: 313px;
-  right: 0;
-}
+  .experience {
+    height: 682px;
+    overflow-y: scroll;
+  }
 
 .avatar {
   top: 0;
@@ -163,4 +188,10 @@
 .profiles-container {
   margin-left: 5%;
   margin-right: 5%;
+}
+  .icon {
+    font-size: 32px;
+    color: #4a4a4a;
+    margin: 0 0 0 15px;
+  }
 }

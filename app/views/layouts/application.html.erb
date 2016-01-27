@@ -10,7 +10,8 @@
   <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
   <meta name=”viewport” content=”width=device-width, initial-scale="1">
 </head>
-<body>
+
+<body class="<%= controller_name %> <%= action_name %>">
 <div id="nav-container">
   <div class="nav-text">
     <span class="nav-title"><%= link_to 'Pansori.us', root_path %></span>
@@ -28,6 +29,7 @@
     </span>
   </div>
 </div>
+
 <%= yield %>
 
 </body>
