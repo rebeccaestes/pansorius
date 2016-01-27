@@ -29,6 +29,9 @@ gem 'materialize-sass'
 
 gem 'font-awesome-sass', '~> 4.5.0'
 
+# to hide api keys
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

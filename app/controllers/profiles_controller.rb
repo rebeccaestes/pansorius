@@ -58,6 +58,7 @@ class ProfilesController < ApplicationController
   end
 
   def update
+    UserMailer.welcome_email(current_user).deliver
     respond_to do |format|
       if @profile.update(profile_params)
         format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }

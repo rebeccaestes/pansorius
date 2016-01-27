@@ -8,3 +8,6 @@ log/development.log
 config/database.yml
 
 tmp/pids/
+
+# Ignore application configuration
+/config/application.yml
