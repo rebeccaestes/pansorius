@@ -154,6 +154,8 @@ a:visited {
   left: 0;
 }
 
+/* Below is for /profile */
+
 .search {
   margin: 20px 2%;
 }
@@ -161,8 +163,6 @@ a:visited {
 .profile-card {
   margin: 10px 2% 0 2%;
   height: 300px;
-/*  border: solid black 1px;*/
-  /*margin-top: 10px;*/
   background-color: rgba(182, 182, 182, 0.13);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5)
 }
