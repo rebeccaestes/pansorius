@@ -146,11 +146,19 @@
 }
 .value-item {
   position: 'absolute';
-    top: 500px;
-    left: 45px;
-    height: 50px;
-    width: 215px;
-    background-color: #86d5ff;
-    border: 2px solid #86d5ff;
-    border-radius: 5px;
+  left: 45px;
+  height: 50px;
+  width: 215px;
+  background-color: #86d5ff;
+  border: 2px solid #86d5ff;
+  border-radius: 5px;
+}
+#value0{
+  top: 410px;
+}
+#value1{
+  top: 500px;
+}
+#value2{
+  top: 590px;
 }

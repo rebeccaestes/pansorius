@@ -15238,3 +15238,42 @@ Processing by ValuesController#index as HTML
   Parameters: {"profile_id"=>"1"}
   Rendered values/index.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 158ms (Views: 157.2ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "profiles" ("role", "insights", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["role", "mentor"], ["insights", "I know stuff, this is an insight"], ["quote", "this is my quote. there are many like it but this one is mine"], ["created_at", "2016-01-27 17:51:43.680766"], ["updated_at", "2016-01-27 17:51:43.680766"]]
+  [1m[36m (211.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mProfile Load (0.8ms)[0m  SELECT  "profiles".* FROM "profiles"  ORDER BY "profiles"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "experiences" ("role", "company", "description", "start_date", "end_date", "profile_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["role", "Software Developer"], ["company", "Optoro"], ["description", "did stuff with ruby"], ["start_date", "January 2016"], ["end_date", "Present"], ["profile_id", 1], ["created_at", "2016-01-27 17:51:43.925861"], ["updated_at", "2016-01-27 17:51:43.925861"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["value", "Trust"], ["created_at", "2016-01-27 17:51:43.945852"], ["updated_at", "2016-01-27 17:51:43.945852"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["value", "Honesty"], ["created_at", "2016-01-27 17:51:43.953131"], ["updated_at", "2016-01-27 17:51:43.953131"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["value", "Intuition"], ["created_at", "2016-01-27 17:51:43.955915"], ["updated_at", "2016-01-27 17:51:43.955915"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["value", "Inspiration"], ["created_at", "2016-01-27 17:51:43.958607"], ["updated_at", "2016-01-27 17:51:43.958607"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["value", "Fortitude"], ["created_at", "2016-01-27 17:51:43.961544"], ["updated_at", "2016-01-27 17:51:43.961544"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["value", "Magnanimity"], ["created_at", "2016-01-27 17:51:43.964213"], ["updated_at", "2016-01-27 17:51:43.964213"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["value", "Humility"], ["created_at", "2016-01-27 17:51:43.966794"], ["updated_at", "2016-01-27 17:51:43.966794"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["value", "Discernment"], ["created_at", "2016-01-27 17:51:43.969284"], ["updated_at", "2016-01-27 17:51:43.969284"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["value", "Competance"], ["created_at", "2016-01-27 17:51:43.971965"], ["updated_at", "2016-01-27 17:51:43.971965"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "values" ("value", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["value", "Creativity"], ["created_at", "2016-01-27 17:51:43.974407"], ["updated_at", "2016-01-27 17:51:43.974407"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m

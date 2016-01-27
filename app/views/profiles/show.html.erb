@@ -4,13 +4,26 @@
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
-		<div class='values'>
-			<h2>Values</h2>
-			<%= link_to 'New Value', new_profile_value_path(@profile) %>
-			<% @values.each do |value| %>
-				<p><%= value %></p>
-				<% end %>
-			</div>
+<h2>Values</h2>
+		<div class='value-item' id='value0'>
+			<% if @valuetaggings[0].blank? %>
+				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+				<%= @valuetaggings[0] %>
+			<% end %>
+		</div>
+		<div class='value-item' id='value1'>
+			<% if @valuetaggings[1].blank? %>
+				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+				<%= @valuetaggings[1] %>
+			<% end %>
+		</div>
+		<div class='value-item' id='value2'>
+			<% if @valuetaggings[2].blank? %>
+				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+				<%= @valuetaggings[2] %>
+			<% end %>
+		</div>
+
 		<div class="col s8">
 			<div class="role">
 				<h2><%= @profile.role.upcase %></h2>
