@@ -156,19 +156,27 @@ a:visited {
 
 .value-item {
   position: 'absolute';
-    top: 500px;
-    left: 45px;
-    height: 50px;
-    width: 215px;
-    background-color: #86d5ff;
-    border: 2px solid #86d5ff;
-    border-radius: 5px;
+  left: 45px;
+  height: 50px;
+  width: 215px;
+  background-color: #86d5ff;
+  border: 2px solid #86d5ff;
+  border-radius: 5px;
+}
+#value0{
+  top: 410px;
+}
+#value1{
+  top: 500px;
+}
+#value2{
+  top: 590px;
 }
 
 /* Below is for /profile */
 
-.search {
-  margin: 20px 2%;
+.search-boxes {
+  margin: 20px 5px;
 }
 
 .profile-card {
@@ -206,6 +214,7 @@ a:visited {
   width: 85%;
   padding-top: 5%;
   padding-left: 2%;
+  color: black;
 }
 
 .values > div {
@@ -237,17 +246,12 @@ a:visited {
 
 .quote {
   font-size: 40px;
-  font-family: 'AbadiMT-CondensedLight';
+  font-family: 'AbadiMT-CondensedLight', 'Helvetica';
   color: #75cfff;
 }
 
-/*styling for the scrollbar*/
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+.button {
+  color: inherit;
+  text-decoration: inherit;
+
 }
