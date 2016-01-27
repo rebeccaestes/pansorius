@@ -94,6 +94,9 @@ h3 > div {
 h4 {
 	font-size: 28px;
 	color: #4a4a4a;
+}
+
+.right h4 {
 	width: 300px;
 }
 

@@ -140,19 +140,26 @@ a:visited {
   /*position: absolute;*/
 }
 
+.experience {
+  margin: 50px 0px 50px;
+}
+
 .left-col {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 .right-col {
   float: right;
-  width: 75%;
+  width: 70%;
+  margin-left: 50px;
+  display: inline-block;
 }
 
 .meet {
   font-size: 32px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .role-loc {
@@ -182,23 +189,24 @@ a:visited {
 }
 
 .values {
-  position: absolute;
-  left: 0px;
-  top: 400px;
+  /*position: absolute;*/
+  /*top: 400px;**/
+  /*margin-left: 10px;*/
 }
 
 .value-item {
-  position: 'absolute';
-  /*left: 250px;*/
-  height: 50px;
-  width: 215px;
+/*  position: 'absolute';
+  left: 250px;
+  height: 50px;*/
+  width: 200px;
   background-color: #86d5ff;
   border: 2px solid #86d5ff;
   border-radius: 5px;
   display: block;
+  margin: 1px;
 }
 
-#value0{
+/*#value0{
   top: 410px;
 }
 #value1{
@@ -206,9 +214,9 @@ a:visited {
 }
 #value2{
   top: 590px;
-}
+}*/
 
-/* Below is for /profile */
+ Below is for /profile 
 
 .search-boxes {
   margin: 20px 5px;
@@ -228,11 +236,19 @@ a:visited {
 .card-left {
   padding-top: 1%;
   float: left;
-  /*margin-left: 1%;*/
+  margin-left: 1%;
   width: 15%;
 }
 
-.user-img {
+.card-right {
+  float: right;
+  width: 80%;
+  padding-top: 5%;
+  padding-left: 2%;
+  color: black;
+}
+
+.profile-card .user-img {
   width: 150px;
   height: 150px;
   border-radius: 75px;
@@ -244,12 +260,14 @@ a:visited {
   position: relative;
 }
 
-.card-right {
-  float: right;
-  width: 85%;
-  padding-top: 5%;
-  padding-left: 2%;
-  color: black;
+.profile .user-img {
+  max-width: 150px;
+  max-height: 150px;
+  /*border-radius: 75px;*/
+  /*border: 2px solid #75cfff;*/
+  margin: 0 auto;
+/*  display: inline-block;
+  margin-bottom: 15px;*/
 }
 
 .values > div {
@@ -288,11 +306,23 @@ a:visited {
 .button {
   color: inherit;
   text-decoration: inherit;
-
 }
 
 .profile h2, .profile h4 {
   display: inline-block;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.experience h4, .experience h2, .insights h2 {
+   display: inline-block;
+   margin: 0;
+}
+
+.experience h4 {
+  font-size: 24px;
+}
+
+.edit-exp {
+  display: inline-block;
 }
