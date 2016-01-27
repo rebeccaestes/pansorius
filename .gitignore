@@ -1,6 +1,10 @@
+
+
 /log/*.log
+/tmp
 config/secrets.yml
-tmp/pids/server.pid
+
 log/development.log
 config/database.yml
-tmp/
+
+tmp/pids/
