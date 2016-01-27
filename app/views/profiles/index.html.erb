@@ -1,29 +1,39 @@
-<!-- <div id="nav-container">
-	<div class="nav-text">
-		<span class="nav-title">Pansori.us</span>
-		<span class="links">
-			<a>about</a> <a>sign up</a> <a>login</a>
-		</span>
-	</div>
-</div> -->
 
-<div id="main-container">
 
-	<div class="protege-column left">
-		<h1>Protege</h1>
-		<p>Lorem ipsum dolor sit amet, officiis adipisci nam ut. Facilis fastidii sed te, ut abhorreant efficiantur qui, albucius adversarium te vis. Et adhuc decore verterem vel. No discere maluisset posidonium eum. In eum ludus accusam ponderum.</p>
+	<div class="search">
+		<input value="search"></input>
+		<input value="search again"></input>
 	</div>
 
-	<div class="mentor-column right">
-		<h1>Mentor</h1>
-		<p>Lorem ipsum dolor sit amet, officiis adipisci nam ut. Facilis fastidii sed te, ut abhorreant efficiantur qui, albucius adversarium te vis. Et adhuc decore verterem vel. No discere maluisset posidonium eum. In eum ludus accusam ponderum.</p>
 	</div>
+	  <% @profiles.each do |profile| %>
+  		<% if profile.image_url != nil %>
+  			<%= link_to profile_path(profile.id) do %>
+	  		  <div class="profile-card">
+	  				<div class="card-left">
+	  				<div class="card-line"></div>
+		  				<%= image_tag profile.image_url, class: 'user-img' %>
+		  				<div class="values">
+		  					<div class="value">Honesty</div> 
+		  					<div class="value">Dedication</div>
+		  					<div>Motivation</div>
+	  					</div>
+	  				</div>
+		  			<div class="card-right">
+		  				<span class="quote"><%= profile.quote %></span>
+		  				<p>I live here</p>
+				  		<p><%= profile.insights %></p>
+			  		</div>
+		  		</div>
+		  		<% end %>
+  		<% end %>
+	<% end %>
 
-	<div id="portal">
-		<h2>Hi there! Today, I'm seeking a:</h2>
-		<div class="buttons seeking">
-			<button>protege</button> <button>mentor</button>
-		</div>
-	</div>
+
+
+
+
+
+
 
 </div>
