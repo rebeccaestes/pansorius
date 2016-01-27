@@ -10,7 +10,7 @@
   <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
   <meta name=”viewport” content=”width=device-width, initial-scale="1">
 </head>
-<body>
+<body class="<%= controller_name %> <%= action_name %>">
    <ul>
      <% if current_user %>
        <li>Welcome, <%= current_user.email %></li>
