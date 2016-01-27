@@ -5,10 +5,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :profiles do
     resources :experiences
-    resources :valuetaggings, shallow: true do
-      resources :values
+    resources :valuetaggings
     end
-  end
+  
 
 
   get '/about', to: 'pages#about'

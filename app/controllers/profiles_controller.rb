@@ -25,6 +25,9 @@ class ProfilesController < ApplicationController
     @valuetaggings = @profile.valuetaggings
     @values = Value.all
     @user = current_user
+    @user_vals = @valuetaggings.values
+    puts "***"
+    puts @user_vals
   end
 
   def new

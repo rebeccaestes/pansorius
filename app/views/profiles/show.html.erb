@@ -13,10 +13,16 @@
 					<% if @profile.user == current_user %>
 						<%= link_to 'new', new_profile_valuetagging_path(@profile) %>
 					<% end %>
+					<% @user_vals.each do |vals| %>
+						<%= vals %>
+					<% end %>
 					<% @valuetaggings.each do |value| %>
 					<div class='value-item'><p><%= value.value %></p></div>
 							<% end %>
 						</div>
+
+					</div>
+
 
 	<div class="profile right-col">
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
@@ -48,5 +54,4 @@
 				</div>
 			<% end %>
 
-	</div>
 	</div>
