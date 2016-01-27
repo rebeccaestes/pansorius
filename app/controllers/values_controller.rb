@@ -17,19 +17,10 @@ class ValuesController < ApplicationController
     @value = Value.new
   end
   def create
-    # @profile = Profile.find(params[:profile_id])
-    # @value = current_user.values.create(value_params)
-    @value = Value.new(value_params)
+    @profile = Profile.find(params[:profile_id])
+    @value = current_user.values.create!(value_params)
+    redirect_to profile_path(@profile)
 
-    respond_to do |format|
-      if @value.save
-        format.html { redirect_to @value, notice: 'Value was successfully created.' }
-        format.json { render :show, status: :created, location: @value }
-      else
-        format.html { render :new }
-        format.json { render json: @value.errors, status: :unprocessable_entity }
-      end
-    end
   end
   def show
 
@@ -41,19 +32,7 @@ class ValuesController < ApplicationController
   end
 
 
-  def create
-    # @experience = Experience.new(experience_params)
 
-    # respond_to do |format|
-      # if @experience.save
-        # format.html { redirect_to @experience, notice: 'Experience was successfully created.' }
-        # format.json { render :show, status: :created, location: @experience }
-      # else
-        # format.html { render :new }
-        # format.json { render json: @experience.errors, status: :unprocessable_entity }
-      # end
-    # end
-  end
 
 
   def update
@@ -81,7 +60,7 @@ class ValuesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def value_params
-      params.requre(:value).permit(:user_id, :profile_id)
+      params.require(:value).permit(:user_id, :profile_id, :value)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -3,7 +3,7 @@
   <%= link_to '+', new_profile_value_path %>
   <ul>
     <% @values.each do |value| %>
-    <li><%= value %></li>
+    <li><%= value.value %></li>
     <% end %>
   </ul>
 </div>
