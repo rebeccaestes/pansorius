@@ -23,9 +23,10 @@
       </div>
       <div class='value-item' id='value2'>
           <% if @valuetag[2].blank? %>
-               <select><%= select_tag(:@valuetaggings[2], options_from_collection_for_select(@values, 'id', 'value')) %>
+               <%= select_tag(:@valuetaggings[2], options_from_collection_for_select(@values, 'id', 'value')) %>
               <%= @valuetag[2] %>
           <% end %>
+        </div>
   <div class="actions">
     <%= f.submit %>
   </div>
