@@ -2,7 +2,7 @@ window.App ||= {}
 
 App.init = ->
   # initializes select boxes
-  $('select').material_select()
+  # $('select').material_select()
 
 # with turbolinks on (document).ready does not fire from page-to-page
 # so listen for page:change event instead

@@ -153,7 +153,7 @@ a:visited {
   top: 0;
   left: 0;
 }
-<<<<<<< HEAD
+
 .value-item {
   position: 'absolute';
     top: 500px;
@@ -164,7 +164,6 @@ a:visited {
     border: 2px solid #86d5ff;
     border-radius: 5px;
 }
-=======
 
 /* Below is for /profile */
 
@@ -241,4 +240,14 @@ a:visited {
   font-family: 'AbadiMT-CondensedLight';
   color: #75cfff;
 }
->>>>>>> 0849d1ba2a65a9bc3009e360bd5a4c2015f72015
+
+/*styling for the scrollbar*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}

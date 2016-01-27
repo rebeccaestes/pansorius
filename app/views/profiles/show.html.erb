@@ -11,6 +11,9 @@
 				<p><%= value %></p>
 				<% end %>
 			</div>
+
+		<h2><%= @profile.name %></h2>
+
 		<div class="col s8">
 			<div class="role">
 				<h2><%= @profile.role.upcase %></h2>
@@ -18,8 +21,10 @@
 					<!-- <%= link_to icon('pencil-square-o', class: 'icon'), edit_profile_path(@profile) %> -->
 					<%= link_to 'edit', edit_profile_path(@profile) %>
 				<% end %>
+				<h4><%= @profile.location %></h3>
 				<blockquote>"<%= @profile.quote %>"</blockquote>
 			</div>
+
 			<div class="experience">
 				<h2>Experience</h2>
 				<% if current_user == @profile.user %>
