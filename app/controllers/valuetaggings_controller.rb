@@ -22,15 +22,22 @@ class ValuetaggingsController < ApplicationController
 
 
   def create
-    puts "***"
-    puts params
-    @valuetag = Valuetagging.new
-    @valuetag.profile = @profile
+    @profile = current_user.profile
+    @profile.valuetaggings.create!(valuetag_params)
+    redirect_to current_user.profile
+    # puts "***"
+    # puts params
+    # @valuetag = Valuetagging.new
+    # @valuetag.profile = @profile
 
   end
   private
   #   # Use callbacks to share common setup or constraints between actions.
   def set_profile
     @profile = Profile.find(params[:profile_id])
+  end
+
+  def valuetag_params
+    params.require(:valuetagging).permit(:profile_id)
   end
 end
