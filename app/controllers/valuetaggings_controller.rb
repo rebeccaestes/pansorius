@@ -1,6 +1,7 @@
-class ValuesController < ApplicationController
-  # before_action :set_post, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user!, except [:index, :show]
+class ValuetaggingsController < ApplicationController
+  before_action :authenticate_user!
+  before_action :set_valuetagging, only: [:edit, :update, :destroy]
+  before_action :set_profile
 
 
   def index
@@ -9,7 +10,13 @@ class ValuesController < ApplicationController
 
   # GET /experiences/new
   def new
-    @value = Value.new
+    if current_user != @profile.user
+      puts '*' * 50
+      puts 'wrong user'
+      redirect_to current_user.profile, alert: 'Permission denied'
+    else
+      @value = Valuetagging.new
+    end
   end
 
   # # GET /experiences/1/edit
@@ -56,12 +63,14 @@ class ValuesController < ApplicationController
   #   end
   # end
   #
-  # private
+  private
   #   # Use callbacks to share common setup or constraints between actions.
   #   def set_experience
   #     @experience = Experience.find(params[:id])
   #   end
-  #
+  def set_profile
+    @profile = Profile.find(params[:profile_id])
+  end#
   #   # Never trust parameters from the scary internet, only allow the white list through.
   #   def experience_params
   #     params.require(:experience).permit(:role, :company, :start_date, :end_date, :description, :profile_id)
