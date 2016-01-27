@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-
-  resources :experiences
   root to: 'pages#index'
   devise_for :users
+  resources :profiles do
+    resources :experiences
+    resources :values, shallow: true do
+      resources :valuetaggings
+    end
+  end
 
-  resources :profiles
-
-  get '/about', to: 'pages#about' 
-  get '/home', to: 'pages#home' 
-
+  get '/about', to: 'pages#about'
+  get '/home', to: 'pages#home'
 end

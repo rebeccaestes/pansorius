@@ -4,6 +4,13 @@
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
+		<div class='values'>
+			<h2>Values</h2>
+			<%= link_to 'New Value', new_profile_value_path(@profile) %>
+			<% @values.each do |value| %>
+				<p><%= value %></p>
+				<% end %>
+			</div>
 		<div class="col s8">
 			<div class="role">
 				<h2><%= @profile.role.upcase %></h2>
@@ -12,7 +19,6 @@
 				<% end %>
 				<blockquote>"<%= @profile.quote %>"</blockquote>
 			</div>
-
 			<div class="experience">
 				<h2>Experience</h2>
 				<% if current_user == @profile.user %>
