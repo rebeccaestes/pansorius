@@ -1,34 +1,37 @@
 class ExperiencesController < ApplicationController
-  before_action :set_experience, only: [:show, :edit, :update, :destroy]
-
-  # GET /experiences
-  # GET /experiences.json
-  def index
-    @experiences = Experience.all
-  end
-
-  # GET /experiences/1
-  # GET /experiences/1.json
-  def show
-  end
+  before_action :authenticate_user!
+  before_action :set_experience, only: [:edit, :update, :destroy]
+  before_action :set_profile
 
   # GET /experiences/new
   def new
-    @experience = Experience.new
+    if current_user != @profile.user
+      puts '*' * 50
+      puts 'wrong user'
+      redirect_to current_user.profile, alert: 'Permission denied'
+    else
+      @experience = Experience.new
+    end
   end
 
   # GET /experiences/1/edit
   def edit
+    if current_user != @profile.user
+      puts '*' * 50
+      puts 'wrong user'
+      redirect_to current_user.profile, alert: 'Permission denied'
+    end
   end
 
   # POST /experiences
   # POST /experiences.json
   def create
     @experience = Experience.new(experience_params)
+    @experience.profile = @profile
 
     respond_to do |format|
       if @experience.save
-        format.html { redirect_to @experience, notice: 'Experience was successfully created.' }
+        format.html { redirect_to @profile, notice: 'Experience was successfully created.' }
         format.json { render :show, status: :created, location: @experience }
       else
         format.html { render :new }
@@ -42,7 +45,7 @@ class ExperiencesController < ApplicationController
   def update
     respond_to do |format|
       if @experience.update(experience_params)
-        format.html { redirect_to @experience, notice: 'Experience was successfully updated.' }
+        format.html { redirect_to @profile, notice: 'Experience was successfully updated.' }
         format.json { render :show, status: :ok, location: @experience }
       else
         format.html { render :edit }
@@ -56,7 +59,7 @@ class ExperiencesController < ApplicationController
   def destroy
     @experience.destroy
     respond_to do |format|
-      format.html { redirect_to experiences_url, notice: 'Experience was successfully destroyed.' }
+      format.html { redirect_to @profile, notice: 'Experience was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -65,6 +68,10 @@ class ExperiencesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_experience
       @experience = Experience.find(params[:id])
+    end
+
+    def set_profile
+      @profile = Profile.find(params[:profile_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
