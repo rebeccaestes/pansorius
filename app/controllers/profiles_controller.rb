@@ -24,11 +24,7 @@ class ProfilesController < ApplicationController
     @experiences = @profile.experiences
     @valuetaggings = @profile.valuetaggings
     @values = Value.all
-<<<<<<< HEAD
-
-=======
     @user = current_user
->>>>>>> 5bfa70d6213c3f76925eff4f0a4dcb26d8ca2b1c
   end
 
   def new
