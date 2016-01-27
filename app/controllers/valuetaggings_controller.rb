@@ -23,7 +23,10 @@ class ValuetaggingsController < ApplicationController
 
   def create
     @profile = current_user.profile
-    @profile.valuetaggings.create!(profile: @profile)
+    @vtag = @profile.valuetaggings.create!(valuetag_params)
+    puts "***"
+    puts @vtag.value.value
+    puts @vtag.profile.name
     redirect_to current_user.profile
     # puts "***"
     # puts params

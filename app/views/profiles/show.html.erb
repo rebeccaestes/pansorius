@@ -14,7 +14,7 @@
 						<%= link_to 'new', new_profile_valuetagging_path(@profile) %>
 					<% end %>
 					<% @user_vals.each do |vals| %>
-						<%= vals %>
+						<%= vals.value %>
 					<% end %>
 					<% @valuetaggings.each do |value| %>
 					<div class='value-item'><p><%= value.value %></p></div>

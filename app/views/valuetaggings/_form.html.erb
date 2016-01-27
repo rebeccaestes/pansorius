@@ -1,4 +1,4 @@
-<%= form_for [@profile, @valuetag] do |f| %>
+<%= form_for ([@profile, @valuetag]) do |f| %>
   <% if @valuetag.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@valuetag.errors.count, "error") %> prohibited this experience from being saved:</h2>
