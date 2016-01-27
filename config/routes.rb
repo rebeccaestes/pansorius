@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :values, shallow: true do
       resources :valuetaggings
     end
+    get '/request', to: 'profiles#connect'
   end
 
   get '/mentors', to: 'profiles#mentors'
