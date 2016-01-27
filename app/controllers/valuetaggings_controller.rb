@@ -28,11 +28,6 @@ class ValuetaggingsController < ApplicationController
     puts @vtag.value.value
     puts @vtag.profile.name
     redirect_to current_user.profile
-    # puts "***"
-    # puts params
-    # @valuetag = Valuetagging.new
-    # @valuetag.profile = @profile
-
   end
   private
   #   # Use callbacks to share common setup or constraints between actions.
