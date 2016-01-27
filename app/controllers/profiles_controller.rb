@@ -24,6 +24,7 @@ class ProfilesController < ApplicationController
     @experiences = @profile.experiences
     @valuetaggings = @profile.valuetaggings
     @values = Value.all
+    @user = current_user
   end
 
   def new
@@ -74,7 +75,7 @@ class ProfilesController < ApplicationController
     @connect_to = Profile.find(params[:profile_id]).user
     @connect_from = current_user
     #try deliver later
-    UserMailer.welcome_email(@connect_to,@connect_from).deliver
+    UserMailer.welcome_email(@connect_to,@connect_from).deliver_later
     puts '*' * 50
     puts 'in request'
     redirect_to @connect_to.profile
