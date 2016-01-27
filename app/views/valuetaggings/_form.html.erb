@@ -9,24 +9,12 @@
       </ul>
     </div>
   <% end %>
-    <div class='value-item' id='value1'>
-  <% if @valuetag[0].blank? %>
-               <select value='@valuetag[0]'><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
-              <%= @valuetag[0] %>
-          <% end %>
-      </div>
       <div class='value-item' id='value1'>
           <% if @valuetag[1].blank? %>
-               <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+               <%= f.select :value_id, options_from_collection_for_select(@values, 'id', 'value') %>
               <%= @valuetag[1] %>
           <% end %>
       </div>
-      <div class='value-item' id='value2'>
-          <% if @valuetag[2].blank? %>
-               <%= select_tag(:@valuetaggings[2], options_from_collection_for_select(@values, 'id', 'value')) %>
-              <%= @valuetag[2] %>
-          <% end %>
-        </div>
   <div class="actions">
     <%= f.submit %>
   </div>

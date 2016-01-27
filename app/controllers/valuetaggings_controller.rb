@@ -26,18 +26,24 @@ class ValuetaggingsController < ApplicationController
   #
   # # POST /experiences
   # # POST /experiences.json
-  # def create
+  def create
+    puts "***"
+    puts params
+    @valuetag = Valuetagging.new
+    @valuetag.profile = @profile
+
+  end
   #   @experience = Experience.new(experience_params)
   #
-  #   respond_to do |format|
-  #     if @experience.save
-  #       format.html { redirect_to @experience, notice: 'Experience was successfully created.' }
+    # respond_to do |format|
+      # if @valuetag.save
+        # format.html { redirect_to @valuetag, notice: 'Experience was successfully created.' }
   #       format.json { render :show, status: :created, location: @experience }
   #     else
   #       format.html { render :new }
   #       format.json { render json: @experience.errors, status: :unprocessable_entity }
   #     end
-  #   end
+
   # end
   #
   # # PATCH/PUT /experiences/1
@@ -73,7 +79,8 @@ class ValuetaggingsController < ApplicationController
     @profile = Profile.find(params[:profile_id])
   end#
   #   # Never trust parameters from the scary internet, only allow the white list through.
-  #   def experience_params
+    def valuetag_params
+      # params.require(:valuetag)
   #     params.require(:experience).permit(:role, :company, :start_date, :end_date, :description, :profile_id)
-  #   end
+    end
 end
