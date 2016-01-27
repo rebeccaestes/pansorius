@@ -4,6 +4,12 @@
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
+		<div class='values'>
+			<h2>Values</h2>
+			<% @values.each do |value| %>
+				<p><%= value %></p>
+				<% end %>
+			</div>
 		<div class="col s8">
 			<div class="role">
 				<h2><%= @profile.role.upcase %></h2>

@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
 
-  root to: 'profiles#index'
+  root to: 'pages#index'
   devise_for :users
-
   resources :profiles do
     resources :experiences
     resources :values, shallow: true do
