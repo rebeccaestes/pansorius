@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   root to: 'profiles#index'
   devise_for :users
 
-  resources :profiles
+  resources :profiles do
+    resources :values, shallow: true do
+      resources :valuetaggings
+    end
+  end
 end
