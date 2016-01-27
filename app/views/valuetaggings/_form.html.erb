@@ -1,7 +1,7 @@
-<%= form_for [@value] do |f| %>
-  <% if @value.errors.any? %>
+<%= form_for [@profile, @valuetag] do |f| %>
+  <% if @valuetag.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@value.errors.count, "error") %> prohibited this experience from being saved:</h2>
+      <h2><%= pluralize(@valuetag.errors.count, "error") %> prohibited this experience from being saved:</h2>
       <ul>
       <% @value.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -9,11 +9,23 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :value %><br>
-    <%= f.text_field :value %>
-  </div>
+    <div class='value-item' id='value1'>
+  <% if @valuetag[0].blank? %>
+               <select value='@valuetag[0]'><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+              <%= @valuetag[0] %>
+          <% end %>
+      </div>
+      <div class='value-item' id='value1'>
+          <% if @valuetag[1].blank? %>
+               <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+              <%= @valuetag[1] %>
+          <% end %>
+      </div>
+      <div class='value-item' id='value2'>
+          <% if @valuetag[2].blank? %>
+               <select><%= select_tag(:@valuetaggings[2], options_from_collection_for_select(@values, 'id', 'value')) %>
+              <%= @valuetag[2] %>
+          <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

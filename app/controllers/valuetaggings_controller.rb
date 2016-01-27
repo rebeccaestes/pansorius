@@ -10,12 +10,13 @@ class ValuetaggingsController < ApplicationController
 
   # GET /experiences/new
   def new
+    @values = Value.all
     if current_user != @profile.user
       puts '*' * 50
       puts 'wrong user'
       redirect_to current_user.profile, alert: 'Permission denied'
     else
-      @value = Valuetagging.new
+      @valuetag = Valuetagging.new
     end
   end
 
