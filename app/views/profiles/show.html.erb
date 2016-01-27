@@ -12,8 +12,9 @@
 			<%= link_to 'new', new_profile_valuetagging_path(@profile) %>
 		<% end %>
 		<% @valuetaggings.each do |value| %>
-		<div class='value-item'><p><%= value %></p></div>
+		<div class='value-item'><p><%= value.value %></p></div>
 				<% end %>
+			</div>
 
 		<div class="col s8">
 			<div class="role">

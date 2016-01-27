@@ -24,6 +24,7 @@ class ProfilesController < ApplicationController
     @experiences = @profile.experiences
     @valuetaggings = @profile.valuetaggings
     @values = Value.all
+
   end
 
   def new

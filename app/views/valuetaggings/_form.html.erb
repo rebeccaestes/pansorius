@@ -11,7 +11,7 @@
   <% end %>
       <div class='value-item' id='value1'>
           <% if @valuetag[1].blank? %>
-               <%= f.select :value_id, options_from_collection_for_select(@values, 'id', 'value') %>
+               <%= f.select :value, options_from_collection_for_select(@values, 'id', 'value') %>
               <%= @valuetag[1] %>
           <% end %>
       </div>

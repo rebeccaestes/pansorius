@@ -23,7 +23,7 @@ class ValuetaggingsController < ApplicationController
 
   def create
     @profile = current_user.profile
-    @profile.valuetaggings.create!(valuetag_params)
+    @profile.valuetaggings.create!(profile: @profile)
     redirect_to current_user.profile
     # puts "***"
     # puts params
@@ -38,6 +38,6 @@ class ValuetaggingsController < ApplicationController
   end
 
   def valuetag_params
-    params.require(:valuetagging).permit(:profile_id)
+    params.require(:valuetagging).permit(:profile_id, :value_id, :value)
   end
 end
