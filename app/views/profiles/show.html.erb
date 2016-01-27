@@ -1,72 +1,67 @@
 <div class="profile">
-	<div class="row">
-		<div class="col s4">
+	<div class="left-col">
 			<img src="http://www.placecage.com/c/200/300">
 		</div>
 
-<h2>Values</h2>
-		<% if @profile.user != current_user %>
 		<div class='values'>
-			<h2>Values</h2>
-			<%= link_to 'New Value', new_profile_value_path(@profile) %>
-			<% @values.each do |value| %>
-				<p><%= value %></p>
+		<h2>Values</h2>
+			<% if @user != @profile.user %>
+				<% @values.each do |value| %>
+					<p><%= value.value %></p>
 				<% end %>
-			</div>
 
-		<h2><%= @profile.name %></h2>
-		<% else %>
-		<div class='value-item' id='value0'>
-			<% if @valuetaggings[0].blank? %>
-				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
-				<%= @valuetaggings[0] %>
-			<% end %>
-		</div>
-		<div class='value-item' id='value1'>
-			<% if @valuetaggings[1].blank? %>
-				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
-				<%= @valuetaggings[1] %>
-			<% end %>
-		</div>
-		<div class='value-item' id='value2'>
-			<% if @valuetaggings[2].blank? %>
-				 <select><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
-				<%= @valuetaggings[2] %>
-			<% end %>
-		</div>
+			<% elsif @user == @profile.user %>
+				<%= link_to 'New Value', new_profile_value_path(@profile) %>
+					<!-- <div id='value0'> -->
+						<% if @valuetaggings[0].blank? %>
+							 <select class="value-item"><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+							<%= @valuetaggings[0] %>
+						<% end %>
+					<!-- </div> -->
+					<!-- <div id='value1'> -->
+						<% if @valuetaggings[1].blank? %>
+							 <select class="value-item"><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+							<%= @valuetaggings[1] %>
+						<% end %>
+					<!-- </div> -->
+					<!-- <div id='value2'> -->
+						<% if @valuetaggings[2].blank? %>
+							 <select class="value-item"><%= options_from_collection_for_select(@values, 'id', 'value') %></select>
+							<%= @valuetaggings[2] %>
+						<% end %>
+				<!-- </div> -->
+			</div>
 		<% end %>
-
-
-		<div class="col s8">
-			<div class="role">
-				<h2><%= @profile.role.upcase %></h2>
-				<% if current_user == @profile.user %>
-					<%= link_to 'edit', edit_profile_path(@profile) %>
-				<% end %>
-				<h4><%= @profile.location %></h3>
-				<blockquote>"<%= @profile.quote %>"</blockquote>
-			</div>
-
-			<div class="experience">
-				<h2>Experience</h2>
-				<% if current_user == @profile.user %>
-					<%= link_to 'new', new_profile_experience_path(@profile) %>
-				<% end %>
-				<% @experiences.each do |experience| %>
-					<h3><%= experience.role %></h3>
-					<% if current_user == @profile.user %>
-						<%= link_to 'edit', edit_profile_experience_path(@profile, experience) %>
-						<%= link_to 'delete', profile_experience_path(@profile, experience), method: :delete, data: { confirm: 'Are you sure?' } %>
-					<% end %>
-					<h4><%= experience.company %></h4>
-					<span> <%= experience.start_date %> </span>
-					<span> -  <%= experience.end_date %> </span>
-					<p><%= experience.description %></p>
-				<% end %>
-			</div>
-		</div>
 	</div>
 
+
+	<div class="right-col">
+		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
+		<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
+		<% if @user == @profile.user %>
+			<%= link_to 'edit', edit_profile_path(@profile) %>
+		<% end %>
+		<p>"<%= @profile.quote %>"</p>
+
+			<div class="experience">
+				<h2>EXPERIENCE</h2>
+				<% if @user == @profile.user %>
+					<%= link_to 'new', new_profile_experience_path(@profile) %>
+				<% end %>
+				<div>
+					<% @experiences.each do |experience| %>
+						<h4><%= experience.role %></h4>
+						<% if current_user == @profile.user %>
+							<%= link_to 'edit', edit_profile_experience_path(@profile, experience) %>
+							<%= link_to 'delete', profile_experience_path(@profile, experience), method: :delete, data: { confirm: 'Are you sure?' } %>
+						<% end %>
+						<div><strong><%= experience.company %></strong></div>
+						<span> <%= experience.start_date %> </span>
+						<span> -  <%= experience.end_date %> </span>
+						<p><%= experience.description %></p>
+					<% end %>
+				</div>
+			</div>
 
 	<% if @profile.role == "mentor" %>
 		<div class="insights">
@@ -77,4 +72,5 @@
 			<blockquote>"<%= @profile.insights %>"</blockquote>
 		</div>
 	<% end %>
+			</div>
 </div>
