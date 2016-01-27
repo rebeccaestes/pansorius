@@ -39,6 +39,26 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def edit
+    if current_user != @profile.user
+      puts '*' * 50
+      puts 'wrong user'
+      redirect_to current_user.profile, alert: 'Permission denied'
+    end
+  end
+
+  def update
+    respond_to do |format|
+      if @profile.update(profile_params)
+        format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
+        format.json { render :show, status: :ok, location: @profile }
+      else
+        format.html { render :edit }
+        format.json { render json: @profile.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
     def set_profile

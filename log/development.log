@@ -12978,3 +12978,202 @@ Processing by ProfilesController#new as HTML
   Rendered profiles/_form.html.erb (7.5ms)
   Rendered profiles/new.html.erb within layouts/application (24.0ms)
 Completed 200 OK in 1220ms (Views: 1204.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/profiles" for ::1 at 2016-01-26 17:49:56 -0500
+Processing by ProfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cBwEMQY7J08vXxYd9c2LSCGd1KJNuryfH4cBMAzdQlQmU3e6WObjEicTqES3nJfQU2fdEKcVYhAxmYkoMWvQKg==", "profile"=>{"role"=>"protege", "quote"=>"I am a protege, feed me"}, "commit"=>"Create Profile"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "profiles" ("role", "quote", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["role", "protege"], ["quote", "I am a protege, feed me"], ["user_id", 5], ["created_at", "2016-01-26 22:49:56.878825"], ["updated_at", "2016-01-26 22:49:56.878825"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/profiles/10
+Completed 302 Found in 54ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/profiles/10" for ::1 at 2016-01-26 17:49:56 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProfile Load (1.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mExperience Load (1.0ms)[0m  SELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1  [["profile_id", 10]]
+  Rendered profiles/show.html.erb within layouts/application (8.9ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 1416ms (Views: 1372.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/experience/1/edit" for ::1 at 2016-01-26 19:42:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/experience/1/edit"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.8ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.8ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (29.1ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (854.6ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (648.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.0ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.5ms)
+  Rendered c:/Ruby21/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (1423.9ms)
+
+
+Started GET "/experiences/1/edit" for ::1 at 2016-01-26 19:44:13 -0500
+Processing by ExperiencesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mExperience Load (2.5ms)[0m  SELECT  "experiences".* FROM "experiences" WHERE "experiences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered experiences/_form.html.erb (42.6ms)
+  Rendered experiences/edit.html.erb within layouts/application (62.6ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 2080ms (Views: 1963.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for ::1 at 2016-01-26 19:45:59 -0500
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mProfile Load (1.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 5]]
+  Rendered profiles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1444ms (Views: 1277.8ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/liberty_skyline-01.png" for ::1 at 2016-01-26 19:46:03 -0500
+
+
+Started GET "/profiles/new" for ::1 at 2016-01-26 19:46:07 -0500
+Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mProfile Load (1.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1[0m  [["user_id", 5]]
+Redirected to http://localhost:3000/profiles/10
+Completed 302 Found in 80ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/profiles/10" for ::1 at 2016-01-26 19:46:07 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mExperience Load (1.5ms)[0m  [1mSELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1[0m  [["profile_id", 10]]
+  Rendered profiles/show.html.erb within layouts/application (15.5ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 1542ms (Views: 1486.5ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/profiles/10/edit" for ::1 at 2016-01-26 19:46:18 -0500
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered profiles/_form.html.erb (9.0ms)
+  Rendered profiles/edit.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 1271ms (Views: 1256.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/profiles/1/edit" for ::1 at 2016-01-26 19:49:35 -0500
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 5]]
+Redirected to http://localhost:3000/profiles/10
+Completed 302 Found in 228ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/profiles/10" for ::1 at 2016-01-26 19:49:36 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProfile Load (1.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mExperience Load (1.5ms)[0m  SELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1  [["profile_id", 10]]
+  Rendered profiles/show.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 1411ms (Views: 1366.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/profiles/1" for ::1 at 2016-01-26 19:51:22 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mExperience Load (2.0ms)[0m  [1mSELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1[0m  [["profile_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (55.1ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 1490ms (Views: 1347.9ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/profiles/1/edit" for ::1 at 2016-01-26 19:51:24 -0500
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (2.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = $1 LIMIT 1  [["user_id", 5]]
+Redirected to http://localhost:3000/profiles/10
+Completed 302 Found in 92ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/profiles/10" for ::1 at 2016-01-26 19:51:25 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProfile Load (1.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mExperience Load (1.5ms)[0m  SELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1  [["profile_id", 10]]
+  Rendered profiles/show.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 1900ms (Views: 1886.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/profiles/10/edit" for ::1 at 2016-01-26 19:52:57 -0500
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mProfile Load (2.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered profiles/_form.html.erb (9.0ms)
+  Rendered profiles/edit.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1513ms (Views: 1346.7ms | ActiveRecord: 22.8ms)
+
+
+Started PATCH "/profiles/10" for ::1 at 2016-01-26 19:53:17 -0500
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Di/dH9Jkpm2wqwy20q6mfuPl63JALVdBdXAuZ4iYweZYYK6UjLliMLjnsu+Q/7rmkR/iwKqCic5bbqZ/tS5TmA==", "profile"=>{"role"=>"mentor", "quote"=>"I am a mentor, feed me"}, "commit"=>"Update Profile", "id"=>"10"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "profiles" SET "role" = $1, "quote" = $2, "updated_at" = $3 WHERE "profiles"."id" = $4  [["role", "mentor"], ["quote", "I am a mentor, feed me"], ["updated_at", "2016-01-27 00:53:17.221374"], ["id", 10]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/profiles/10
+Completed 302 Found in 51ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/profiles/10" for ::1 at 2016-01-26 19:53:17 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mProfile Load (1.5ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mExperience Load (1.0ms)[0m  [1mSELECT "experiences".* FROM "experiences" WHERE "experiences"."profile_id" = $1[0m  [["profile_id", 10]]
+  Rendered profiles/show.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 1261ms (Views: 1215.3ms | ActiveRecord: 8.0ms)
