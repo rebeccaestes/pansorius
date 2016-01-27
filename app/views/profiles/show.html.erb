@@ -25,15 +25,27 @@
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
 
+
+
+		<% if @user == @profile.user %>
+			<%= link_to 'edit', edit_profile_path(@profile) %>
+		<% end %>
+
 		<blockquote>"<%= @profile.quote %>"</blockquote>
 
 			<div class="experience">
 				<h2>EXPERIENCE</h2>
 
+				<% if @user == @profile.user %>
+					<%= link_to 'new', new_profile_experience_path(@profile) %>
+				<% end %>
 				<div>
 					<% @experiences.each do |experience| %>
 						<h4><%= experience.role %></h4>
-
+						<% if current_user == @profile.user %>
+							<div class="edit-exp"><%= link_to 'edit', edit_profile_experience_path(@profile, experience) %>
+							<%= link_to 'delete', profile_experience_path(@profile, experience), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+						<% end %>
 						<div class="exp-info">
 							<div><%= experience.company %></div>
 							<div><%= experience.start_date %> - <%= experience.end_date %> </div>
@@ -46,6 +58,10 @@
 			<% if @profile.role == "mentor" %>
 				<div class="insights">
 					<h2>INSIGHTS</h2>
+
+			<% if current_user == @profile.user %>
+						<%= link_to 'edit', edit_profile_path(@profile) %>
+			<% end %>
 
 					<blockquote>"<%= @profile.insights %>"</blockquote>
 				</div>
