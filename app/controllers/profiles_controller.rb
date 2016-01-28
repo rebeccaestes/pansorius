@@ -24,7 +24,7 @@ class ProfilesController < ApplicationController
     @experiences = @profile.experiences
     @user = current_user
     @user_vals = @profile.values.take(3)
-    @user_skills = @profile.skills
+    @user_skills = @profile.skills.take(6)
   end
 
   def new
