@@ -18,7 +18,16 @@
 					<% end %>
 						</div>
 
-					</div>
+
+<h2>Skills</h2>
+<% if @profile.user == current_user %>
+<%= link_to 'new', new_profile_skilltagging_path(@profile) %>
+<% end %>
+<% @user_skills.each do |skill| %>
+<div class='skill-item'><p><%= skill.skill %></p></div>
+<% end %>
+</div>
+
 
 
 	<div class="profile right-col">

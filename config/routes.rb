@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   resources :profiles do
     resources :experiences
     resources :valuetaggings
+    resources :skilltaggings
     end
-  
+
 
 
   get '/about', to: 'pages#about'
