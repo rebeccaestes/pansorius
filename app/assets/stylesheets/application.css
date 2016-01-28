@@ -131,6 +131,7 @@ a:visited {
   height: 100%;
   z-index: 50;
   position: relative;
+  border-radius: 0 0 10px 0
 }
 
 .right-col {
@@ -175,15 +176,6 @@ a:visited {
 
 .values h2, .skills h2 {
   margin-left: 25%;
-}
-
-.value-item {
-  width: 200px;
-  background-color: #86d5ff;
-  border: 2px solid #86d5ff;
-  border-radius: 5px;
-  display: block;
-  margin: 1px;
 }
 
 <<<<<<< HEAD
@@ -242,27 +234,26 @@ a:visited {
 }
 
 .profile .user-img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 200px;
+  /*max-height: 150px;*/
   /*position: absolute;*/
   /*border-radius: 75px;*/
   /*border: 2px solid #75cfff;*/
   margin: 0 auto;
   display: block;
   margin-bottom: 15px;
+  border-radius: 5px;
 }
 
-.values > div {
+.value-item, .skill-item {
   display: block;
-  width: 125px;
+  width: 150px;
   text-align: center;
   text-transform: uppercase;
   background-color: #75cfff;
-  margin: 15px auto;
+  margin: 10px auto;
   border-radius: 4px;
   color: white;
-  z-index: 90;
-  position: relative;
 }
 
 .card-line {

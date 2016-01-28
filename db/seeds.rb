@@ -10,7 +10,6 @@ Skill.destroy_all
 
 users = User.all
 
-Experience.create(role: 'Software Developer', company: 'Optoro', description: 'did stuff with ruby', start_date: 'January 2016', end_date: 'Present', profile: Profile.all.first)
 Value.create(value: 'Trust')
 Value.create(value: 'Honesty')
 Value.create(value: 'Intuition')
@@ -47,9 +46,6 @@ Skill.create(skill: 'Design')
 
 # user = User.find(2)
 # Profile.create(role: 'protege', insights: 'I know stuff, this is an insights', user: user, quote: 'this is my quote. there are many like it but this one is mine')
-# prof = Profile.find_by(role: 'protege')
-# Experience.create(role: 'Software Developer', company: 'Optoro', description: 'did stuff with ruby', start_date: 'January 2016', end_date: 'Present', profile: prof)
-
 
 
 # prof = Profile.find_by(role: 'protege')
@@ -152,3 +148,28 @@ Profile.create(role: "protege",
 							quote: "I want to join the ranks of changemakers and make an impact on social issues.", 
 							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
 							)
+
+# mentors = Profile.where(role: 'mentor')
+# proteges = Profile.where(role: 'protege')
+
+mentors = Profile.where(role: 'mentor')
+proteges = Profile.where(role: 'protege')
+
+mentors.each do |mentor|
+	Experience.create(role: 'Senior Software Developer', company: 'Optoro', description: 'Expanded technology team, increased profits by 80%.', start_date: 'January 2014', end_date: 'Present', profile: mentor)
+end
+
+Skilltagging.create(profile_id: 1, skill_id: 1)
+Skilltagging.create(profile_id: 1, skill_id: 2)
+Skilltagging.create(profile_id: 1, skill_id: 3)
+
+Valuetagging.create(profile_id: 1, value_id: 1)
+Valuetagging.create(profile_id: 1, value_id: 2)
+
+
+
+proteges.each do |protege|
+	Experience.create(role: 'Junior Team Member', company: 'Deloitte Digital', description: 'Marketing and design assistance', start_date: 'June 2015', end_date: 'Present', profile: protege)
+	Skilltagging.create(profile_id: protege, skill_id: rand(10))
+	Valuetagging.create(profile_id: protege, value_id: rand(20))
+end
