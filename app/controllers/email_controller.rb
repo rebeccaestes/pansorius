@@ -1,4 +1,4 @@
-class MailerController < ApplicationController
+class EmailController < ApplicationController
   before_action :authenticate_user!
   before_action :set_recipient
 

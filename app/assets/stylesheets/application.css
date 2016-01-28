@@ -216,7 +216,7 @@ a:visited {
   top: 590px;
 }*/
 
- Below is for /profile 
+ Below is for /profile
 
 .search-boxes {
   margin: 20px 5px;
@@ -325,4 +325,33 @@ a:visited {
 
 .edit-exp {
   display: inline-block;
+}
+
+/* style for email message*/
+.email-new {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.email-body,
+.email form {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #f0f0f0
+}
+
+.email-send {
+  position: absolute;
+  top: 425px;
+  height: 46px;
+  margin: 0 auto;
+  left: 0;
+}
+
+.email-info {
+  width: 400px;
+  margin: 10px auto;
+  text-align: left;
 }
