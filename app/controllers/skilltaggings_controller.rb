@@ -12,7 +12,7 @@ class SkilltaggingsController < ApplicationController
     @new_skilltag = Skilltagging.new
   end
 
-  # GET /experiences/new
+  # GET /skills/new
   def new
     @skills = Skill.all
     @current_skills = @profile.skills.take(6)

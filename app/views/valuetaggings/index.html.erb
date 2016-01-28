@@ -1,7 +1,12 @@
 <h1>Values</h1>
-<% @current_skills.each do |skill| %>
-  <%= skill.skill %>
-  <% end %>
-<% if @current_skills.length => 6 %>
-<%= render 'form' %>
+
+<% if @current_values.length <= 3 %>
+  <%= render 'form' %>
 <% end %>
+
+<ul>
+<% @current_values.each do |value| %>
+  <li><%= value.value %></li>
+  <%= button_to "Remove", profile_valuetagging_path(@profile, value[:id]), :method => :delete %>
+  <% end %>
+</ul>

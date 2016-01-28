@@ -9,7 +9,7 @@
 	<div class='values'>
 		<h2>Values</h2>
 		<% if @profile.user == current_user %>
-			<%= link_to 'new', new_profile_valuetagging_path(@profile) %>
+			<%= link_to 'edit', profile_valuetaggings_path(@profile) %>
 		<% end %>
 			<% @user_vals.each do |vals| %>
 			<div class='value-item'><p><%= vals.value %></p></div>
