@@ -32,6 +32,10 @@ class SkilltaggingsController < ApplicationController
     puts @stag.profile.name
     redirect_to current_user.profile
   end
+
+  def delete
+    @skilltag = @profile.skilltags.find(params[:id])
+  end
   private
   #   # Use callbacks to share common setup or constraints between actions.
   def set_profile
