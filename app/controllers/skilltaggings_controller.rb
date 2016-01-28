@@ -1,6 +1,6 @@
 class SkilltaggingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_skilltagging, only: [:edit, :update, :destroy]
+  # before_action :set_skilltagging, only: [:edit, :update, :destroy]
   before_action :set_profile
 
 
@@ -32,12 +32,15 @@ class SkilltaggingsController < ApplicationController
     puts "***"
     puts @stag.skill.skill
     puts @stag.profile.name
-    redirect_to current_user.profile
+    redirect_to profile_skilltaggings_path
   end
 
-  def delete
-    @skilltag = @profile.skilltags.find(params[:id])
-    @skilltag.destroy!
+  def destroy
+    @profile = Profile.find(params[:profile_id])
+    @current_skills = @profile.skills
+    @skilltag = @current_skills.find(params[:id])
+    @skilltag.destroy
+    redirect_to profile_skilltaggings_path
   end
   private
   #   # Use callbacks to share common setup or constraints between actions.
