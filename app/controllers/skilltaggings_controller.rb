@@ -1,23 +1,27 @@
 class SkilltaggingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_skilltagging, only: [:edit, :update, :destroy]
+  # before_action :set_skilltagging, only: [:edit, :update, :destroy]
   before_action :set_profile
 
 
   def index
-      @skills = Skill.all
+    @skills = Skill.all
+    @current_skills = @profile.skills.take(6)
+    @skilltag = @current_skills.find(params[:id])
+    @profile = current_user.profile
+    @new_skilltag = Skilltagging.new
   end
 
-  # GET /experiences/new
+  # GET /skills/new
   def new
     @skills = Skill.all
-    @current_skills = @profile.skills
+    @current_skills = @profile.skills.take(6)
     if current_user != @profile.user
       puts '*' * 50
       puts 'wrong user'
       redirect_to current_user.profile, alert: 'Permission denied'
     else
-      @skilltag = Skilltagging.new
+      @new_skilltag = Skilltagging.new
     end
   end
 
@@ -28,7 +32,15 @@ class SkilltaggingsController < ApplicationController
     puts "***"
     puts @stag.skill.skill
     puts @stag.profile.name
-    redirect_to current_user.profile
+    redirect_to profile_skilltaggings_path
+  end
+
+  def destroy
+    @profile = Profile.find(params[:profile_id])
+    @current_skills = @profile.skills
+    @skilltag = @current_skills.find(params[:id])
+    @skilltag.destroy
+    redirect_to profile_skilltaggings_path
   end
   private
   #   # Use callbacks to share common setup or constraints between actions.

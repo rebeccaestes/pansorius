@@ -1,0 +1,12 @@
+<h1>Skills</h1>
+
+<% if @current_skills.length <= 6 %>
+  <%= render 'form' %>
+<% end %>
+
+<ul>
+<% @current_skills.each do |skill| %>
+  <li><%= skill.skill %></li>
+  <%= button_to "Remove", profile_skilltagging_path(@profile, skill[:id]), :method => :delete %>
+  <% end %>
+</ul>
