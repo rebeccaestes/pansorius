@@ -8,7 +8,8 @@ Rails.application.routes.draw do
     resources :valuetaggings
     end
   
-
+  get '/proteges', to: 'profiles#proteges'
+  get '/mentors', to: 'profiles#mentors'
 
   get '/about', to: 'pages#about'
   get '/home', to: 'pages#home'
