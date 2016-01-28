@@ -1,0 +1,7 @@
+<h1>Values</h1>
+<% @current_skills.each do |skill| %>
+  <%= skill.skill %>
+  <% end %>
+<% if @current_skills.length => 6 %>
+<%= render 'form' %>
+<% end %>

@@ -5,13 +5,15 @@ class SkilltaggingsController < ApplicationController
 
 
   def index
-      @skills = Skill.all
+    @skills = Skill.all
+    @current_skills = @profile.skills.take(6)
+    @skilltag = Skilltagging.new
   end
 
   # GET /experiences/new
   def new
     @skills = Skill.all
-    @current_skills = @profile.skills
+    @current_skills = @profile.skills.take(6)
     if current_user != @profile.user
       puts '*' * 50
       puts 'wrong user'
