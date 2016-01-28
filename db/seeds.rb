@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Value.destroy_all
+Skill.destroy_all
 users = User.all
 Profile.create(role: 'mentor', insights: 'I know stuff, this is an insight', user: users.first, quote: 'this is my quote. there are many like it but this one is mine', image_url: 'http://www.placecage.com/c/200/300')
 Experience.create(role: 'Software Developer', company: 'Optoro', description: 'did stuff with ruby', start_date: 'January 2016', end_date: 'Present', profile: Profile.all.first)
@@ -19,6 +20,27 @@ Value.create(value: 'Humility')
 Value.create(value: 'Discernment')
 Value.create(value: 'Competance')
 Value.create(value: 'Creativity')
+Skill.create(skill: 'Delegation')
+Skill.create(skill: 'Communication')
+Skill.create(skill: 'Motivational')
+Skill.create(skill: 'Problem solving')
+Skill.create(skill: 'Relational')
+Skill.create(skill: 'Analytical')
+Skill.create(skill: 'Procedural')
+Skill.create(skill: 'Innovation')
+Skill.create(skill: 'Strategy')
+Skill.create(skill: 'Mentoring')
+Skill.create(skill: 'Development')
+Skill.create(skill: 'Entrepreneurship')
+Skill.create(skill: 'Marketing')
+Skill.create(skill: 'Branding')
+Skill.create(skill: 'Public Relations')
+Skill.create(skill: 'Deliberate')
+Skill.create(skill: 'Researching')
+Skill.create(skill: 'Management')
+Skill.create(skill: 'Finance')
+Skill.create(skill: 'Design')
+
 
 # Value.create(value: 'awesomeness', user: users.first)
 

@@ -6,13 +6,12 @@ Rails.application.routes.draw do
   resources :profiles do
     resources :experiences
     resources :valuetaggings
-    end
-  
-  get '/proteges', to: 'profiles#proteges'
-  get '/mentors', to: 'profiles#mentors'
+    resources :skilltaggings
+    resources :email, only: [:new, :create]
+  end
 
   get '/about', to: 'pages#about'
   get '/home', to: 'pages#home'
-
-
+  get '/mentors', to: 'profiles#mentors'
+  get '/proteges', to: 'profiles#proteges'
 end

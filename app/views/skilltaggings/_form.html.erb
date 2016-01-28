@@ -1,0 +1,21 @@
+<%= form_for ([@profile, @skilltag]) do |f| %>
+  <% if @skilltag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skilltag.errors.count, "error") %> prohibited this experience from being saved:</h2>
+      <ul>
+      <% @skill.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class='skill-item'>
+          <% if @skilltag[1].blank? %>
+               <%= f.collection_select :skill_id, @skills, :id, :skill %>
+              <%= @skilltag[1] %>
+          <% end %>
+      </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
