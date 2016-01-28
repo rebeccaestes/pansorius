@@ -1,0 +1,21 @@
+<%= form_for ([@profile, @valuetag]) do |f| %>
+  <% if @valuetag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@valuetag.errors.count, "error") %> prohibited this experience from being saved:</h2>
+      <ul>
+      <% @value.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class='value-item' id='value1'>
+          <% if @valuetag[1].blank? %>
+               <%= f.collection_select :value_id, @values, :id, :value %>
+              <%= @valuetag[1] %>
+          <% end %>
+      </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

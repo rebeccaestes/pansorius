@@ -1,17 +1,19 @@
 Rails.application.routes.draw do
+
+
   root to: 'pages#index'
   devise_for :users
   resources :profiles do
     resources :experiences
-    resources :values, shallow: true do
-      resources :valuetaggings
+    resources :valuetaggings
+    resources :skilltaggings
     end
-    get '/request', to: 'profiles#connect'
-  end
 
-  get '/mentors', to: 'profiles#mentors'
-  get '/proteges', to: 'profiles#proteges'
+    get '/connect', to: 'profiles#connect'
+  end
 
   get '/about', to: 'pages#about'
   get '/home', to: 'pages#home'
+
+
 end
