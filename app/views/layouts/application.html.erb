@@ -18,6 +18,10 @@
       <%= notice %>
       <%= alert %>
     </span>
+    <span>
+      <%= link_to 'mentors', mentors_path, class: 'mentors-link results-links' %>
+      <%= link_to 'proteges', proteges_path, class: 'proteges-link results-links' %>
+    </span>
     <span class="links">
       <%= link_to 'about', about_path %>
       <% if !current_user %>
