@@ -162,10 +162,14 @@ end
 Skilltagging.create(profile_id: 1, skill_id: 1)
 Skilltagging.create(profile_id: 1, skill_id: 2)
 Skilltagging.create(profile_id: 1, skill_id: 3)
+Valuetagging.create(profile_id: 1, value_id: 4)
+Valuetagging.create(profile_id: 1, value_id: 5)
 
-Valuetagging.create(profile_id: 1, value_id: 1)
-Valuetagging.create(profile_id: 1, value_id: 2)
-
+Skilltagging.create(profile_id: 6, skill_id: 4)
+Skilltagging.create(profile_id: 6, skill_id: 5)
+Skilltagging.create(profile_id: 6, skill_id: 6)
+Valuetagging.create(profile_id: 6, value_id: 7)
+Valuetagging.create(profile_id: 6, value_id: 8)
 
 
 proteges.each do |protege|

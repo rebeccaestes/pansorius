@@ -4,12 +4,12 @@
 			<%= link_to profile_path(profile.id) do %>
   		  <div class="profile-card">
   				<div class="card-left">
-  		<!-- 		<div class="card-line"></div> -->
+  				<!-- <div class="card-line"></div> -->
 	  				<%= image_tag profile.image_url, class: 'user-img' %>
 	  				<div class="values">
 		  				<% if profile.values.length >= 3 %>
 		  					<div class="value"><%= profile.values[0].value %></div> 
-		  					<div class="value"><%= profile.values[1].value %></div>	  	
+		  					<div class="value"><%= profile.values[1].value %></div>
 		  					<div class="value"><%= profile.values[2].value %></div>
 		  				<% elsif profile.values.length == 2 %>
 		  					<div class="value"><%= profile.values[0].value %></div> 
@@ -18,17 +18,11 @@
 		  					<div class="value"><%= profile.values[0].value %></div> 
 		  				<% end %>
   					</div>
-
   				</div>
 	  			<div class="card-right">
 	  				<span class="quote"><%= profile.quote %></span>
 	  				<p><%= profile.location %></p>
-	  	  		<p><%= profile.insights %></p>
-
-			  	<% if profile.user %>
-					<%= profile.values[1].value %>
-					<% end %>
-
+	  				<p><%= profile.insights %></p>
 		  		</div>
 	  		</div>
 	  		<% end %>
