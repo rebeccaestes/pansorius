@@ -173,7 +173,7 @@ a:visited {
   left: 0;
 }
 
-.values h2 {
+.values h2, .skills h2 {
   margin-left: 25%;
 }
 

@@ -17,7 +17,7 @@
 		<% end %>
 	</div>
 
-
+	<div class="skills">
 	<h2>Skills</h2>
 	<% if @profile.user == current_user %>
 			<%= link_to 'new', new_profile_skilltagging_path(@profile) %>
@@ -25,16 +25,14 @@
 		<% @user_skills.each do |skill| %>
 		<div class='skill-item'><p><%= skill.skill %></p></div>
 	<% end %>
+	</div>
 </div>
 
 
-<div class="profile right-col">
-	<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
-<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
-
-
-
 	<div class="profile right-col">
+
+	<%= link_to 'Request Email', new_profile_email_path(@profile) %>
+
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
 		<% if @user == @profile.user %>
@@ -77,5 +75,3 @@
 				</div>
 			<% end %>
 	</div>
-
-	<%= link_to 'Request Email', new_profile_email_path(@profile) %>
