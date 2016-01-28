@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pansorius</title>
+  <title>Pansori.us</title>
   <%= stylesheet_link_tag    'normalize', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'splash', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -17,6 +17,10 @@
     <span class="notice alert">
       <%= notice %>
       <%= alert %>
+    </span>
+    <span>
+      <%= link_to 'mentors', mentors_path, class: 'mentors-link results-links' %>
+      <%= link_to 'proteges', proteges_path, class: 'proteges-link results-links' %>
     </span>
     <span class="links">
       <%= link_to 'about', about_path %>

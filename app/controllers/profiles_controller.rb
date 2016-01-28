@@ -70,6 +70,16 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def connect
+    @connect_to = Profile.find(params[:profile_id]).user
+    @connect_from = current_user
+    #try deliver later
+    UserMailer.welcome_email(@connect_to,@connect_from).deliver_later
+    puts '*' * 50
+    puts 'in request'
+    redirect_to @connect_to.profile
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
     def set_profile

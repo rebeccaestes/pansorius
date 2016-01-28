@@ -11,6 +11,7 @@
 		<% if @profile.user == current_user %>
 			<%= link_to 'new', new_profile_valuetagging_path(@profile) %>
 		<% end %>
+
 			<% @user_vals.each do |vals| %>
 			<div class='value-item'><p><%= vals.value %></p></div>
 		<% end %>
@@ -27,18 +28,20 @@
 </div>
 
 
-
 <div class="profile right-col">
 	<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 <span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
 
 
 
-<% if @user == @profile.user %>
-	<%= link_to 'edit', edit_profile_path(@profile) %>
-<% end %>
 
-<blockquote>"<%= @profile.quote %>"</blockquote>
+	<div class="profile right-col">
+		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
+		<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
+		<% if @user == @profile.user %>
+			<%= link_to 'edit', edit_profile_path(@profile) %>
+		<% end %>
+		<blockquote>"<%= @profile.quote %>"</blockquote>
 
 <div class="experience">
 	<h2>EXPERIENCE</h2>
@@ -67,10 +70,13 @@
 			<h2>INSIGHTS</h2>
 
 			<% if current_user == @profile.user %>
-				<%= link_to 'edit', edit_profile_path(@profile) %>
-				<% end %>
 
-			<blockquote>"<%= @profile.insights %>"</blockquote>
-		</div>
-	<% end %>
-</div>
+						<%= link_to 'edit', edit_profile_path(@profile) %>
+			<% end %>
+
+					<blockquote>"<%= @profile.insights %>"</blockquote>
+				</div>
+			<% end %>
+	</div>
+
+	<%= link_to 'connect', new_profile_mailer_path(@profile) %>
