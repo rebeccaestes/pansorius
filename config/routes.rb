@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :experiences
     resources :valuetaggings
     resources :skilltaggings
-    resources :mailer, only: [:new, :create]
+    resources :email, only: [:new, :create]
   end
 
   get '/about', to: 'pages#about'
