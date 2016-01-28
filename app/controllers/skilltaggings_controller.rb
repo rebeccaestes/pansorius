@@ -7,7 +7,9 @@ class SkilltaggingsController < ApplicationController
   def index
     @skills = Skill.all
     @current_skills = @profile.skills.take(6)
-    @skilltag = Skilltagging.new
+    @skilltag = @current_skills.find(params[:id])
+    @profile = current_user.profile
+    @new_skilltag = Skilltagging.new
   end
 
   # GET /experiences/new
@@ -19,7 +21,7 @@ class SkilltaggingsController < ApplicationController
       puts 'wrong user'
       redirect_to current_user.profile, alert: 'Permission denied'
     else
-      @skilltag = Skilltagging.new
+      @new_skilltag = Skilltagging.new
     end
   end
 
@@ -35,6 +37,7 @@ class SkilltaggingsController < ApplicationController
 
   def delete
     @skilltag = @profile.skilltags.find(params[:id])
+    @skilltag.destroy!
   end
   private
   #   # Use callbacks to share common setup or constraints between actions.

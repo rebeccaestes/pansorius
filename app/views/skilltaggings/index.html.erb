@@ -2,7 +2,7 @@
 <ul>
 <% @current_skills.each do |skill| %>
   <li><%= skill.skill %></li>
-  <%= link_to "Remove", @skilltag.skill, :method => :delete %>
+  <%= button_to "Remove", profile_skilltagging_path(@profile, skill[:id]), :method => :delete %>
   <% end %>
 </ul>
 <% if @current_skills.length <= 6 %>
