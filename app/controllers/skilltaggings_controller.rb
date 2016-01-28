@@ -11,6 +11,7 @@ class SkilltaggingsController < ApplicationController
   # GET /experiences/new
   def new
     @skills = Skill.all
+    @current_skills = @profile.skills
     if current_user != @profile.user
       puts '*' * 50
       puts 'wrong user'

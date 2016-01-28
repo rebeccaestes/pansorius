@@ -23,7 +23,7 @@ class ProfilesController < ApplicationController
   def show
     @experiences = @profile.experiences
     @user = current_user
-    @user_vals = @profile.values
+    @user_vals = @profile.values.take(3)
     @user_skills = @profile.skills
   end
 
