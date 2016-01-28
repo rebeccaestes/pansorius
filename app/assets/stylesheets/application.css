@@ -148,6 +148,9 @@ a:visited {
   float: left;
   width: 25%;
   padding: 10px 1%;
+  background-color: rgba(182, 182, 182, 0.13);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 .right-col {
