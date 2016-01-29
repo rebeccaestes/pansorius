@@ -408,14 +408,23 @@ footer {
 }
 
 .social {
-  width: 50%;
-  margin: 0 auto;
+  margin: 40px 0 0 25%;
+}
+
+.social a {
+  color: #86d5ff;
+  text-decoration: none;
+  padding: 1%;
+}
+
+.social-foot {
+  // margin-top: 5%;
   text-align: center;
 }
 
-footer a {
+.social-foot a {
   color: #86d5ff;
-  margin: 0 10px;
+  // margin: 0 10px;
 }
 
 .screen {
