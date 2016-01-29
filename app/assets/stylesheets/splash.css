@@ -175,14 +175,14 @@ h4 {
 
 .bottom-image {
 	position: absolute;
-	background-image: url(images/neue-skyline.png);
+	background-image: url(neue-skyline.png);
 	width: 100vw;
 	height: 395px;
 	top: 631px;
 }
 
 .top-image {
-	background-image: url(images/liberty_skyline-01.png);
+	background-image: url(liberty_skyline-01.png);
 	width: 100vw;
 	height: 610px;
 	position: absolute;
@@ -220,4 +220,13 @@ h4 {
 	background: linear-gradient(180deg, #f8e71c, #75cfff);
 	width: 7px;
 	height: 697px;
+}
+
+.about-content {
+	padding: 0 5vw 0 0;
+	font-size: 18px;
+}
+
+.about-title {
+	margin: 14px 0;
 }

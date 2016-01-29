@@ -53,6 +53,8 @@
   position: relative;
   width: 100%;
   height: 100px;
+  background-image: url("liberty_skyline-01.png");
+  background-position: 100px;
 }
 
 .nav-text {
@@ -69,7 +71,7 @@
   float: left;
   padding: 0;
   color: #86d5ff;
-  font-size: 30px;
+  font-size: 48px;
 }
 
 .links {
@@ -190,7 +192,6 @@ a:visited {
   margin-left: 25%;
 }
 
-<<<<<<< HEAD
 /*#value0{
   top: 410px;
 }
