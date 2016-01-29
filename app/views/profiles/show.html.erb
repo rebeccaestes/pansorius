@@ -6,6 +6,8 @@
 		<img src="http://www.placecage.com/c/200/300" class="user-img">
 	<% end %>
 
+	<%= link_to 'connect', new_profile_email_path(@profile) %>
+
 	<div class='values'>
 		<h2>Values</h2>
 		<% if @profile.user == current_user %>
