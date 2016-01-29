@@ -12,6 +12,7 @@ App.init = ->
   App.Role.init()
   $('.results-links').hide();
   $('.profiles.show .results-links').show();
+  $('.pages.about .results-links').show();
   $('.profiles.mentors .results-links.proteges-link').show();
   $('.profiles.proteges .results-links.mentors-link').show();
 
