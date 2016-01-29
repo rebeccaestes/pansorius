@@ -70,7 +70,7 @@ Profile.create(role: "mentor",
 							location: "Arlington, VA",
 							quote: "There can never be too manyleaders in the world.", 
 							insights: "Lead by example.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "mentor", 
@@ -79,7 +79,7 @@ Profile.create(role: "mentor",
 							location: "Washington, DC",
 							quote: "We can't change the world alone, we need innovators and changemakers to make an impact!", 
 							insights: "Avoid common pitfalls of leadership.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "mentor", 
@@ -88,7 +88,7 @@ Profile.create(role: "mentor",
 							location: "Reston, VA",
 							quote: "I exist in the intersection of impact, entrepreneurship, and technology.", 
 							insights: "Never stop improving.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "mentor", 
@@ -97,7 +97,7 @@ Profile.create(role: "mentor",
 							location: "Bethesda, MD",
 							quote: "What good is knowledge if it is not shared with others?", 
 							insights: "Keep meetings productive.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "mentor", 
@@ -106,7 +106,7 @@ Profile.create(role: "mentor",
 							location: "Washington, DC",
 							quote: "I thrive to empower others to think for themselves and be disruptive innovators.", 
 							insights: "Find a mentor.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "protege", 
@@ -114,7 +114,7 @@ Profile.create(role: "protege",
 							name: "Joyce Lee", 
 							location: "Washington, DC",
 							quote: "Looking for mentor to help me with my startup.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "protege", 
@@ -122,7 +122,7 @@ Profile.create(role: "protege",
 							name: "Nicole Nguyen", 
 							location: "Washington, DC",
 							quote: "I love to move and shake the world of marketing!", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "protege", 
@@ -130,7 +130,7 @@ Profile.create(role: "protege",
 							name: "Cathleen Tong", 
 							location: "Silver Spring, MD",
 							quote: "I am a passionate problem-solver, and love researching in the field. ", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "protege", 
@@ -138,7 +138,7 @@ Profile.create(role: "protege",
 							name: "Kristen Koo", 
 							location: "Arlington, VA",
 							quote: "I want to help mentor those younger than me and get some guidance myself!", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 Profile.create(role: "protege", 
@@ -146,7 +146,7 @@ Profile.create(role: "protege",
 							name: "Alicia Le", 
 							location: "Alexandria, VA",
 							quote: "I want to join the ranks of changemakers and make an impact on social issues.", 
-							image_url: "http://i.kinja-img.com/gawker-media/image/upload/s--FJ4m_ViD--/18j05qgz6tfxjjpg.jpg"
+							image_url: "salad.jpg"
 							)
 
 # mentors = Profile.where(role: 'mentor')

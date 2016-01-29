@@ -47,7 +47,9 @@
 
 <div class="profile right-col">
 
-	<%= link_to 'Request Email', new_profile_email_path(@profile) %>
+		<% if @profile.user != current_user %>
+			<%= link_to 'Request Email', new_profile_email_path(@profile) %>
+		<% end %>
 
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role.upcase%> in <%= @profile.location %></span>
@@ -56,7 +58,7 @@
   			<i class="fa fa-pencil-square-o"></i>
 			<% end %>
 		<% end %>
-		<blockquote><%= @profile.quote %></blockquote>
+		<p>"<%= @profile.quote %>"</p>
 
 <div class="experience">
 	<h2>EXPERIENCE</h2>
@@ -95,7 +97,7 @@
 				<% end %>
 			<% end %>
 
-			<blockquote>"<%= @profile.insights %>"</blockquote>
+			<p>"<%= @profile.insights %>"</p>
 		</div>
 	<% end %>
 </div>

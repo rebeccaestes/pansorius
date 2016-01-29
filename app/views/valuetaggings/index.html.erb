@@ -1,12 +1,21 @@
-<h1>Values</h1>
+<div class="form">
+
+<h3>Values</h3>
 
 <% if @current_values.length <= 3 %>
   <%= render 'form' %>
 <% end %>
 
-<ul>
+<div class='tagging'>Your current values:</div>
+
 <% @current_values.each do |value| %>
-  <li><%= value.value %></li>
-  <%= button_to "Remove", profile_valuetagging_path(@profile, value[:id]), :method => :delete %>
-  <% end %>
-</ul>
+   <div class='tag-item'>
+		<%= value.value %>
+  	<%= button_to "Remove", profile_valuetagging_path(@profile, value[:id]), :method => :delete %>
+  </div>
+<% end %>
+
+<%= link_to 'Go Back', profile_path(current_user), class: 'tag-link' %>
+
+
+</div>
