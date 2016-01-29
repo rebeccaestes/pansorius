@@ -2,11 +2,19 @@
  *= require font-awesome
  */
 
-.mentor {
+.mentor-text {
   color:#75cfff;
 }
 
-.protege {
+.protege-text {
+  color: #fff362;
+}
+
+.mentor-background {
+  color:#75cfff;
+}
+
+.protege-background {
   color: #fff362;
 }
 
@@ -378,4 +386,27 @@ a:visited {
 .label, .input {
   display: inline-block;
   width: 300px;
+}
+
+.connect-link {
+  display: block;
+  width: 175px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff362;
+  margin: 10px auto;
+  border-radius: 4px;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #75cfff;
+}
+
+.social {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }

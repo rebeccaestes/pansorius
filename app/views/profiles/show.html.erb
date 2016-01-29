@@ -6,7 +6,9 @@
 		<img src="http://www.placecage.com/c/200/300" class="user-img">
 	<% end %>
 
-	<%= link_to 'connect', new_profile_email_path(@profile) %>
+	<% if @profile.user != current_user %>
+		<%= link_to 'Request Email', new_profile_email_path(@profile), class: 'connect-link' %>
+	<% end %>
 
 	<div class='values'>
 		<h2>Values</h2>
@@ -33,25 +35,21 @@
 		<% end %>
 	</div>
 
-	<span>
-		<%= link_to @profile.facebook do %>
-			<i class="fa fa-facebook-square"></i>
-		<% end %>
-		<%= link_to @profile.twitter do %>
-   		<i class="fa fa-twitter-square"></i>
-		<% end %>
-		<%= link_to @profile.instagram do %>
-   		<i class="fa fa-instagram"></i>
-		<% end %>
-  </span>
+	<div class='social'>
+		<a href="<%= @profile.facebook %>">
+			<i class="fa fa-facebook-square fa-2x"></i>
+		</a>
+		<a href='<%= @profile.twitter %>'>
+   		<i class="fa fa-twitter-square fa-2x"></i>
+		</a>
+		<a href='<%= @profile.instagram %>'>
+   		<i class="fa fa-instagram fa-2x"></i>
+		</a>
+  </div>
 </div>
 
 
 <div class="profile right-col">
-
-		<% if @profile.user != current_user %>
-			<%= link_to 'Request Email', new_profile_email_path(@profile) %>
-		<% end %>
 
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role.upcase%> in <%= @profile.location %></span>

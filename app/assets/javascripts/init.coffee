@@ -12,10 +12,13 @@ App.Role =
 App.init = ->
   App.Role.init()
   $('.results-links').hide();
+  $('footer .social').hide();
   $('.profiles.show .results-links').show();
   $('.pages.about .results-links').show();
+  $('.pages.about footer .social').show();
   $('.profiles.mentors .results-links.proteges-link').show();
   $('.profiles.proteges .results-links.mentors-link').show();
+  $('.pages.index footer .social').show();
 
 # with turbolinks on (document).ready does not fire from page-to-page
 # so listen for page:change event instead
