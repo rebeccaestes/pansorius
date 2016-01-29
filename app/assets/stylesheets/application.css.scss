@@ -402,11 +402,22 @@ a:visited {
 }
 
 footer {
-  background-color: #75cfff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .social {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+footer a {
+  color: #86d5ff;
+  margin: 0 10px;
+}
+
+.screen {
+  mix-blend-mode: screen;
 }
