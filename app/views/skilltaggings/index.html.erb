@@ -1,12 +1,19 @@
-<h1>Skills</h1>
+<div class="form">
+	<h3>Skills</h3>
 
-<% if @current_skills.length <= 6 %>
-  <%= render 'form' %>
-<% end %>
+	<% if @current_skills.length <= 6 %>
+	  <%= render 'form' %>
+	<% end %>
 
-<ul>
-<% @current_skills.each do |skill| %>
-  <li><%= skill.skill %></li>
-  <%= button_to "Remove", profile_skilltagging_path(@profile, skill[:id]), :method => :delete %>
-  <% end %>
-</ul>
+	<div class='tagging'>Your current skills:</div>
+
+	<% @current_skills.each do |skill| %>
+	  <div class='tag-item'>
+	  	<%= skill.skill %> 
+	  	<%= button_to "Remove", profile_skilltagging_path(@profile, skill[:id]), :method => :delete %>
+	  </div>
+	<% end %>
+
+	<%= link_to 'Go Back', profile_path(current_user), class: 'tag-link' %>
+
+</div>

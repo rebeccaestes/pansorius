@@ -11,57 +11,57 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
+  <p class="field profile-form">
+    <%= f.label :name, class: 'label' %><br>
+    <%= f.text_field :name, class: 'input' %>
+  </p>
 
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
+  <p class="field profile-form">
+    <%= f.label :location, class: 'label' %><br>
+    <%= f.text_field :location, class: 'input' %>
+  </p>
 
-  <div class="field">
-    <%= f.label :role %><br>
+  <p class="field">
+    <%= f.label :role, class: 'label' %><br>
     <%= f.select(:role, [['Mentor', 'mentor'], ['Protege', 'protege']], {:prompt => 'Select Your Desired Role',:include_blank => false}, data: { behavior: "select-role" }) %>
-  </div>
+  </p>
 
-  <div class="field">
-    <%= f.label :quote %><br>
-    <%= f.text_area :quote %>
-  </div>
+  <p class="field">
+    <%= f.label :quote, class: 'label'  %><br>
+    <%= f.text_area :quote, class: 'input essay'  %>
+  </p>
 
-  <div class="field insights-form">
-    <%= f.label :insights %><br>
-    <%= f.text_area :insights %>
-  </div>
+  <p class="field">
+    <%= f.label :insights, class: 'label'  %><br>
+    <%= f.text_area :insights, class: 'input essay'  %>
+  </p>
 
-  <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
-  </div>
+  <p class="field">
+    <%= f.label :image_url, class: 'label'  %><br>
+    <%= f.text_field :image_url, class: 'input'  %>
+  </p>
 
-  <div class="field">
-    <%= f.label :twitter %><br>
-    <%= f.text_field :twitter %>
-  </div>
+    <p class="field">
+      <%= f.label :twitter, class: 'label' %><br>
+      <%= f.text_field :twitter, class: 'input'  %>
+    </p>
 
-  <div class="field">
-    <%= f.label :linkedin %><br>
-    <%= f.text_field :linkedin %>
-  </div>
+    <p class="field">
+      <%= f.label :linkedin, class: 'label' %><br>
+      <%= f.text_field :linkedin, class: 'input'  %>
+    </p>
 
-  <div class="field">
-    <%= f.label :facebook %><br>
-    <%= f.text_field :facebook %>
-  </div>
+    <p class="field">
+      <%= f.label :facebook, class: 'label' %><br>
+      <%= f.text_field :facebook, class: 'input'  %>
+    </p>
 
-  <div class="field">
-    <%= f.label :instagram %><br>
-    <%= f.text_field :instagram %>
-  </div>
+    <p class="social-field">
+      <%= f.label :instagram, class: 'label' %><br>
+      <%= f.text_field :instagram, class: 'input' %>
+    </p>
 
-  <div class="actions">
+  <p class="actions">
     <%= f.submit %>
-  </div>
+  </p>
 <% end %>

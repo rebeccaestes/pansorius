@@ -1,21 +1,21 @@
-<%= form_for ([@profile, @new_valuetag]) do |f| %>
-  <% if @new_valuetag.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@new_valuetag.errors.count, "error") %> prohibited this experience from being saved:</h2>
-      <ul>
-      <% @value.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-      <div class='value-item'>
-          <% if @new_valuetag[1].blank? %>
-               <%= f.collection_select :value_id, @values, :id, :value %>
-              <%= @new_valuetag[1] %>
-          <% end %>
+
+  <%= form_for ([@profile, @new_valuetag]) do |f| %>
+    <% if @new_valuetag.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@new_valuetag.errors.count, "error") %> prohibited this experience from being saved:</h2>
+        <ul>
+        <% @value.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
       </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+    <% end %>
+        <div class='new-tag-item'>
+            <% if @new_valuetag[1].blank? %>
+                 <%= f.collection_select :value_id, @values, :id, :value %>
+                <%= @new_valuetag[1] %>
+            <% end %>
+        </div>
+     <%= f.submit "Add Value" %>
+
+  <% end %>
