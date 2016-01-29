@@ -2,4 +2,5 @@
 
 <%= render 'form' %>
 
+<%= link_to 'delete', profile_experience_path(@profile, @experience), method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Back', @profile %>

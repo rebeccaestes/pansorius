@@ -9,7 +9,9 @@
 	<div class='values'>
 		<h2>Values</h2>
 		<% if @profile.user == current_user %>
-			<%= link_to 'edit', profile_valuetaggings_path(@profile) %>
+			<%= link_to profile_valuetaggings_path(@profile) do %>
+				<i class="fa fa-pencil-square-o"></i>
+			<% end %>
 		<% end %>
 
 		<% @user_vals.each do |vals| %>
@@ -18,40 +20,61 @@
 	</div>
 
 	<div class="skills">
-	<h2>Skills</h2>
-	<% if @profile.user == current_user %>
-			<%= link_to 'edit', profile_skilltaggings_path(@profile) %>
-	<% end %>
+		<h2>Skills</h2>
+		<% if @profile.user == current_user %>
+			<%= link_to profile_skilltaggings_path(@profile) do %>
+				<i class="fa fa-pencil-square-o"></i>
+			<% end %>
+		<% end %>
 		<% @user_skills.each do |skill| %>
-		<div class='skill-item'><p><%= skill.skill %></p></div>
-	<% end %>
+			<div class='skill-item'><p><%= skill.skill %></p></div>
+		<% end %>
 	</div>
+
+	<span>
+		<%= link_to @profile.facebook do %>
+			<i class="fa fa-facebook-square"></i>
+		<% end %>
+		<%= link_to @profile.twitter do %>
+   		<i class="fa fa-twitter-square"></i>
+		<% end %>
+		<%= link_to @profile.instagram do %>
+   		<i class="fa fa-instagram"></i>
+		<% end %>
+  </span>
 </div>
 
 
-	<div class="profile right-col">
+<div class="profile right-col">
 
 	<%= link_to 'Request Email', new_profile_email_path(@profile) %>
 
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role.upcase%> in <%= @profile.location %></span>
 		<% if @user == @profile.user %>
-			<%= link_to 'edit', edit_profile_path(@profile) %>
+			<%= link_to edit_profile_path(@profile) do %>
+  			<i class="fa fa-pencil-square-o"></i>
+			<% end %>
 		<% end %>
-		<blockquote>"<%= @profile.quote %>"</blockquote>
+		<blockquote><%= @profile.quote %></blockquote>
 
 <div class="experience">
 	<h2>EXPERIENCE</h2>
 
 	<% if @user == @profile.user %>
-		<%= link_to 'new', new_profile_experience_path(@profile) %>
+		<%= link_to new_profile_experience_path(@profile) do %>
+			<i class="fa fa-plus-square-o"></i>
+		<% end %>
 	<% end %>
 		<div>
 		<% @experiences.each do |experience| %>
 			<h4><%= experience.role %></h4>
 		<% if current_user == @profile.user %>
-			<div class="edit-exp"><%= link_to 'edit', edit_profile_experience_path(@profile, experience) %>
-				<%= link_to 'delete', profile_experience_path(@profile, experience), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+			<div class="edit-exp">
+				<%= link_to edit_profile_experience_path(@profile, experience) do %>
+					<i class="fa fa-pencil-square-o"></i>
+				<% end %>
+			</div>
 		<% end %>
 			<div class="exp-info">
 				<div><%= experience.company %></div>
@@ -67,11 +90,12 @@
 			<h2>INSIGHTS</h2>
 
 			<% if current_user == @profile.user %>
-
-						<%= link_to 'edit', edit_profile_path(@profile) %>
+				<%= link_to edit_profile_path(@profile) do %>
+					<i class="fa fa-pencil-square-o"></i>
+				<% end %>
 			<% end %>
 
-					<blockquote>"<%= @profile.insights %>"</blockquote>
-				</div>
-			<% end %>
-	</div>
+			<blockquote>"<%= @profile.insights %>"</blockquote>
+		</div>
+	<% end %>
+</div>
