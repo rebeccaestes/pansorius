@@ -43,7 +43,7 @@ gem 'figaro'
 # gem 'capistrano-rails', group: :development
 
 #configures rails to serve static assets
-gem 'rails_12factor', group: :production
+# gem 'rails_12factor', group: :production
 
 #for windows platforms
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
