@@ -12,14 +12,21 @@
   				<div class="card-line"></div>
 	  				<%= image_tag profile.image_url, class: 'user-img' %>
 	  				<div class="values">
-	  					<div class="value">Honesty</div> 
-	  					<div class="value">Dedication</div>
-	  					<div>Motivation</div>
+		  				<% if profile.values.length >= 3 %>
+		  					<div class="value"><%= profile.values[0].value %></div> 
+		  					<div class="value"><%= profile.values[1].value %></div>
+		  					<div><%= profile.values[1].value %></div>
+		  				<% elsif profile.values.length == 2 %>
+		  					<div class="value"><%= profile.values[0].value %></div> 
+		  					<div class="value"><%= profile.values[1].value %></div>
+		  				<% elsif profile.values.length == 2 %>
+		  					<div class="value"><%= profile.values[0].value %></div> 
+		  				<% end %>
   					</div>
   				</div>
 	  			<div class="card-right">
 	  				<span class="quote"><%= profile.quote %></span>
-	  				<p>I live here</p>
+	  				<p><%= profile.location %></p>
 			  		<p><%= profile.insights %></p>
 		  		</div>
 	  		</div>
