@@ -4,8 +4,8 @@ class EmailController < ApplicationController
 
   def new
     @template =
-"To: Potential #{@recipient.role.capitalize}, #{@recipient.name.capitalize}
-From: Potential #{current_user.profile.role.capitalize}, #{current_user.profile.name.capitalize}
+"To: Potential #{@recipient.role.capitalize}, #{@recipient.name}
+From: Potential #{current_user.profile.role.capitalize}, #{current_user.profile.name}
 Subject: Introducing Yourself
 
 Welcome to Pansori.us messaging system!
