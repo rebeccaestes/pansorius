@@ -175,14 +175,14 @@ h4 {
 
 .bottom-image {
 	position: absolute;
-	background-image: url('<%= asset_path("neue-skyline.png") %>');
+	background-image: url(asset-path("neue-skyline.png"));
 	width: 100vw;
 	height: 395px;
 	top: 631px;
 }
 
 .top-image {
-	background-image: url('<%= asset_path("liberty_skyline-01.png") %>');
+	background-image: url(asset-path("liberty_skyline-01.png"));
 	width: 100vw;
 	height: 610px;
 	position: absolute;
