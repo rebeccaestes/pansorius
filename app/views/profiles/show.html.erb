@@ -31,14 +31,16 @@
 
 	<div class="profile right-col">
 
-	<%= link_to 'Request Email', new_profile_email_path(@profile) %>
+		<% if @profile.user != current_user %>
+			<%= link_to 'Request Email', new_profile_email_path(@profile) %>
+		<% end %>
 
 		<div><h4 class="meet">Meet <%= @profile.name %> </h4></div>
 		<span class="role-loc">a <%= @profile.role%> in <%= @profile.location %></span>
 		<% if @user == @profile.user %>
 			<%= link_to 'edit', edit_profile_path(@profile) %>
 		<% end %>
-		<blockquote>"<%= @profile.quote %>"</blockquote>
+		<p>"<%= @profile.quote %>"</p>
 
 <div class="experience">
 	<h2>EXPERIENCE</h2>
@@ -71,7 +73,7 @@
 						<%= link_to 'edit', edit_profile_path(@profile) %>
 			<% end %>
 
-					<blockquote>"<%= @profile.insights %>"</blockquote>
+					<p>"<%= @profile.insights %>"</p>
 				</div>
 			<% end %>
 	</div>
