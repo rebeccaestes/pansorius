@@ -1,3 +1,11 @@
+.mentor {
+  color:#75cfff;
+}
+
+.protege {
+  color: #fff362;
+}
+
 .notice {
   margin-left: 10%;
 }
@@ -314,7 +322,7 @@ a:visited {
   width: 75vw;
   height: 500px;
   margin: 0 auto;
-  background-color: #f0f0f0
+  background-color: #f0f0f0;
 }
 
 .email-send {

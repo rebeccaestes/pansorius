@@ -1,3 +1,4 @@
+#Assigns empty object to App if App is undefined
 window.App ||= {}
 
 App.Role =
