@@ -7,16 +7,16 @@ class ProfilesController < ApplicationController
     if current_user
       @profile = current_user.profile
     end
-    @profiles = Profile.all
+    @profiles = Profile.all.order("updated_at desc")
   end
 
   def mentors
-    @profiles = Profile.where(role: 'mentor')
+    @profiles = Profile.where(role: 'mentor').order("updated_at desc")
     render "index"
   end
 
   def proteges
-    @profiles = Profile.where(role: 'protege')
+    @profiles = Profile.where(role: 'protege').order("updated_at desc")
     render "index"
   end
 
