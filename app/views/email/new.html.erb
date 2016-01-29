@@ -1,8 +1,6 @@
-<p class='email-info'>Please enter the message you want sent to <%= @recipient.name %></p>
-
 <div class='email-new'>
   <%= form_tag profile_email_index_path(@recipient) do %>
-    <%= text_area_tag :email_body, 'Enter email message here. Make sure to include contact information', class:'email-body' %>
+    <%= text_area_tag :email_body, @template, class:'email-body' %>
     <%= submit_tag 'Send Message', class:'email-send' %>
   <% end %>
 </div>

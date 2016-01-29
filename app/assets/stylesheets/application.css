@@ -329,29 +329,23 @@ a:visited {
 
 /* style for email message*/
 .email-new {
-  max-width: 400px;
+  max-width: 75vw;
   margin: 0 auto;
   position: relative;
 }
 
 .email-body,
 .email form {
-  width: 400px;
-  height: 400px;
+  width: 75vw;
+  height: 500px;
   margin: 0 auto;
   background-color: #f0f0f0
 }
 
 .email-send {
   position: absolute;
-  top: 425px;
+  top: 525px;
   height: 46px;
   margin: 0 auto;
   left: 0;
-}
-
-.email-info {
-  width: 400px;
-  margin: 10px auto;
-  text-align: left;
 }
