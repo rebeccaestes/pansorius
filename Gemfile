@@ -28,10 +28,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'materialize-sass'
 
 # gem 'font-awesome-sass', '~> 4.5.0'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 # to hide api keys
 gem 'figaro'
+
+# upload files
+gem 'carrierwave'
+
+# upload to S3 instead of local public folder
+gem "fog"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -62,4 +68,4 @@ group :development do
 end
 
 #for heroku deployment
-ruby "2.2.3"
+# ruby "2.2.3"

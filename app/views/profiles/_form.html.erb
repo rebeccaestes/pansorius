@@ -37,8 +37,8 @@
   </p>
 
   <p class="field">
-    <%= f.label :image_url, class: 'label'  %><br>
-    <%= f.text_field :image_url, class: 'input'  %>
+    <%= f.label :avatar, class: 'label'  %><br>
+    <%= f.file_field :avatar, class: 'input' %>
   </p>
 
     <p class="field">
@@ -60,7 +60,7 @@
       <%= f.label :instagram, class: 'label' %><br>
       <%= f.text_field :instagram, class: 'input' %>
     </p>
-
+    
   <p class="actions">
     <%= f.submit %>
   </p>

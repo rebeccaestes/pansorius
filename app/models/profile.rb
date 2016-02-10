@@ -5,4 +5,5 @@ class Profile < ActiveRecord::Base
   has_many :valuetaggings, dependent: :destroy
   has_many :values, through: :valuetaggings
   has_many :experiences, dependent: :destroy
+  mount_uploader :avatar, AvatarUploader, :mount_on => :avatar
 end
