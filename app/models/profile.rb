@@ -1,8 +1,8 @@
 class Profile < ActiveRecord::Base
-  belongs_to :user
-  has_many :skilltaggings
+  belongs_to :user, dependent: :destroy
+  has_many :skilltaggings, dependent: :destroy
   has_many :skills, through: :skilltaggings
-  has_many :valuetaggings
+  has_many :valuetaggings, dependent: :destroy
   has_many :values, through: :valuetaggings
-  has_many :experiences
+  has_many :experiences, dependent: :destroy
 end

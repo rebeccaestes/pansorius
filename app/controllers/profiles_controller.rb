@@ -70,6 +70,12 @@ class ProfilesController < ApplicationController
     end
   end
 
+#TODO: warning are you sure
+  def destroy
+    @profile.destroy
+    redirect_to '/'
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
     def set_profile
