@@ -1,6 +1,14 @@
 <div class="search-boxes">
-	<input value="specialty"></input>
-	<input value="location"></input>
+	<%= form_tag(profiles_path, method: "get") do %>
+		<%= label_tag(:role, "role")  %>
+		<%= select_tag(:role, options_for_select([['mentor', 'mentor'],['protege', 'protege'],['all', nil]], @role)) %>
+		<%= label_tag(:search, "value")  %>
+		<%= collection_select(:search, :value, @values, :id, :value, {:include_blank => 'All', :selected => @value}) %>
+		<%= label_tag(:location, "location") %>
+	  <%= text_field_tag(:location, @location) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+	<!-- need clear search -->
 </div>
 
   <% @profiles.each do |profile| %>

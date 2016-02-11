@@ -39,6 +39,9 @@ gem 'carrierwave'
 # upload to S3 instead of local public folder
 gem "fog"
 
+# to create ActiveRecord scopes utilizing Postgres full text search
+gem "pg_search"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

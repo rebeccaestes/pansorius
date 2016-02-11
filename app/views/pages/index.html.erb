@@ -13,7 +13,7 @@
 	<div id="portal">
 		<h2>Hi there! Today, I'm seeking a:</h2>
 		<div class="buttons seeking">
-			<button><%= link_to 'protege', proteges_path, class: 'button' %></button> <button><%= link_to 'mentor', mentors_path, class: 'button' %></button>
+			<button><%= link_to 'protege', profiles_path(:role => 'protege'), class: 'button' %></button> <button><%= link_to 'mentor', profiles_path(:role => 'mentor'), class: 'button' %></button>
 		</div>
 	</div>
 </div>

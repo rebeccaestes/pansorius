@@ -6,4 +6,9 @@ class Profile < ActiveRecord::Base
   has_many :values, through: :valuetaggings
   has_many :experiences, dependent: :destroy
   mount_uploader :avatar, AvatarUploader, :mount_on => :avatar
+  include PgSearch
+  pg_search_scope :search_by_location, :against => :location
+  scope :all_or_role, ->(role) do
+    role.present? ? where(role: role) : all
+  end
 end

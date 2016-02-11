@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   get '/about', to: 'pages#about'
-  get '/mentors', to: 'profiles#mentors'
-  get '/proteges', to: 'profiles#proteges'
+  # get '/mentors', to: 'profiles#mentors'
+  # get '/proteges', to: 'profiles#proteges'
+  # post '/search/:location', to: 'profiles#locationSearch'
 end
