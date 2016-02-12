@@ -5,6 +5,6 @@ class UserMailer < ApplicationMailer
     @to = to
     @from = from
     @message = message
-    mail to: @to.email, from: @from.profile.name, subject: "Potential #{@from.profile.role.capitalize}"
+    mail to: @to.email, from: "\"#{@from.profile.name}\" <#{@from.email}>", subject: "Potential Mentor/Protege"
   end
 end

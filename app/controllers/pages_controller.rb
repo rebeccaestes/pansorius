@@ -1,5 +1,3 @@
-require 'pry'
-
 class PagesController < ApplicationController
 
   def home

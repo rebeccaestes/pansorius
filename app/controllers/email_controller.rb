@@ -23,7 +23,7 @@ Instructions:
   def create
     #TODO: limit number of emails between people
     @email_body = params[:email_body]
-    UserMailer.connect_email(@recipient.user, current_user, @email_body).deliver
+    UserMailer.connect_email(@recipient.user, current_user, @email_body).deliver_later
     redirect_to current_user.profile
   end
 
