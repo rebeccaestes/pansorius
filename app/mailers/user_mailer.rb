@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: "pansori@#{ENV['domain'] || ENV['MAILGUN_DOMAIN']}"
+  default from: "pansori@#{ENV['MAILGUN_DOMAIN'] || ENV['domain']}"
 
   def connect_email(to,from, message)
     @to = to
