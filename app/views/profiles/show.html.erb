@@ -2,6 +2,8 @@
 
 	<% if @profile.avatar %>
 		<%= image_tag @profile.avatar.url, class: 'user-img' %>
+	<% elsif @profile.image_url %>
+		<%= image_tag @profile.image_url, class: 'user-img' %>
 	<% else %>
 		<img src="http://www.placecage.com/c/200/300" class="user-img">
 	<% end %>
