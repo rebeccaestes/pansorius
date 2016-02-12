@@ -1,8 +1,8 @@
 <div class="profile left-col">
 
-	<% if @profile.avatar %>
+	<% if @profile.avatar.present? %>
 		<%= image_tag @profile.avatar.url, class: 'user-img' %>
-	<% elsif @profile.image_url %>
+	<% elsif @profile.image_url.present? %>
 		<%= image_tag @profile.image_url, class: 'user-img' %>
 	<% else %>
 		<img src="http://www.placecage.com/c/200/300" class="user-img">
