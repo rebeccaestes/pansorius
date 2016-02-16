@@ -1,3 +1,7 @@
+<%= react_component('Index', profiles: @profiles) %>
+<% puts '*' * 50 %>
+<% puts  @vtags%>
+
 <div class="search-boxes">
 	<%= form_tag(profiles_path, method: "get") do %>
 		<%= label_tag(:role, "role")  %>

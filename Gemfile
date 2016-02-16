@@ -42,6 +42,10 @@ gem "fog"
 # to create ActiveRecord scopes utilizing Postgres full text search
 gem "pg_search"
 
+# to use react in the app
+gem 'react-rails', '~> 1.6.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

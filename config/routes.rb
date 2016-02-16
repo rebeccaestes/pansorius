@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :valuetaggings
     resources :skilltaggings
     resources :email, only: [:new, :create]
+    get '/values', to: 'values#index' 
   end
 
   get '/about', to: 'pages#about'

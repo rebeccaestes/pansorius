@@ -87,4 +87,7 @@ Rails.application.configure do
     :domain         => 'pansorius.herokuapp.com',
     :authentication => :plain,
   }
+
+  #react
+  config.react.variant = :production
 end

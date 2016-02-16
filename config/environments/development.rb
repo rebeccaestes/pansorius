@@ -51,4 +51,7 @@ Rails.application.configure do
     :password       => ENV["password"],
     :authentication => :plain,
   }
+
+  # react
+  config.react.variant = :development
 end

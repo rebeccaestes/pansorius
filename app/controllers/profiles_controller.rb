@@ -19,6 +19,7 @@ class ProfilesController < ApplicationController
     puts "value #{session[:value]}"
     puts "role #{session[:role]}"
     puts "loc #{session[:location]}"
+    @vtags = Valuetagging.all
   end
 
   def show
